@@ -1,0 +1,883 @@
+[
+    {
+        "id": "9abdaa01a5d65ace",
+        "type": "tab",
+        "label": "Zendure HUB1200+ACE1500",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "eb4d668f4e91787c",
+        "type": "group",
+        "z": "9abdaa01a5d65ace",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "e458c8745cea0c73",
+            "d6ae5acd130df90d",
+            "70df50d09d8b5102"
+        ],
+        "x": 514,
+        "y": 79,
+        "w": 492,
+        "h": 122
+    },
+    {
+        "id": "dede6f83a7768d68",
+        "type": "group",
+        "z": "9abdaa01a5d65ace",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "640583f47281ded1",
+            "84c3bdb579d3f2d9",
+            "1c5bc514b4963983",
+            "1d91bef9fbe63dd4",
+            "a0ad6cc0a65501f7",
+            "cb1cecd61578f5ec",
+            "54159a1e9e1bbfdf",
+            "d4e88a592b93121d",
+            "746fe6694760c815",
+            "98eb5b3560a04688"
+        ],
+        "x": 14,
+        "y": 639,
+        "w": 852,
+        "h": 202
+    },
+    {
+        "id": "1730e993370e8831",
+        "type": "group",
+        "z": "9abdaa01a5d65ace",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "e1fdd720b4b14791",
+            "6227991ce76749fa",
+            "6b8fc6f4e491dff6",
+            "e122621fb28ef2eb",
+            "3e85811c715fb1e6",
+            "e00ff23b5588a061",
+            "3b2e58ff09e9b9eb",
+            "19af02918cb5a823"
+        ],
+        "x": 14,
+        "y": 139,
+        "w": 252,
+        "h": 482
+    },
+    {
+        "id": "297d8f4fc85aa9fc",
+        "type": "group",
+        "z": "9abdaa01a5d65ace",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "ffb2ebc92c5f8f23",
+            "575c55efcab6a96e",
+            "f4070590db0f2747",
+            "f0d5ee67fdc6307c",
+            "bcbf8d6a85d7e762",
+            "923a1228d42cfd56",
+            "d5f7b766fb90a4cb",
+            "e215f3adc59be7c7"
+        ],
+        "x": 274,
+        "y": 139,
+        "w": 192,
+        "h": 482
+    },
+    {
+        "id": "4eb62435c9300dc1",
+        "type": "inject",
+        "z": "9abdaa01a5d65ace",
+        "name": "Alle 10 Sekunden",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "6227991ce76749fa",
+                "6b8fc6f4e491dff6",
+                "3e85811c715fb1e6",
+                "e1fdd720b4b14791",
+                "e00ff23b5588a061",
+                "3b2e58ff09e9b9eb",
+                "19af02918cb5a823"
+            ]
+        ]
+    },
+    {
+        "id": "c49835682b4a39b0",
+        "type": "comment",
+        "z": "9abdaa01a5d65ace",
+        "name": "Abfrage alle 10 Sekunden",
+        "info": "",
+        "x": 150,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "147d389ff83c2bb5",
+        "type": "comment",
+        "z": "9abdaa01a5d65ace",
+        "name": "Benötigte Leistung berechnen",
+        "info": "",
+        "x": 600,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "84c1d06f58a7dd2c",
+        "type": "comment",
+        "z": "9abdaa01a5d65ace",
+        "name": "Übergabe an Zendure HUB1200",
+        "info": "",
+        "x": 870,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "c71ee820e1ab0bc8",
+        "type": "ioBroker out",
+        "z": "9abdaa01a5d65ace",
+        "name": "requiredPower",
+        "topic": "",
+        "ack": "false",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 820,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "dd53f9c8c64f13ad",
+        "type": "function",
+        "z": "9abdaa01a5d65ace",
+        "name": "Berechnung entladen",
+        "func": "// Konstante Werte für Schwellenwerte\nconst LOW_BATTERY_THRESHOLD = 15; // Schwellenwert für niedrigen Akku\nconst FULL_CHARGE_THRESHOLD = 100; // Schwellenwert für volle Ladung\nconst NO_CHARGE_DAYS = 3; // Anzahl der Tage ohne volle Ladung\nconst MIN_OUTPUT_POWER = 30; // Mindestleistung 30 Watt\nconst MEDIUM_OUTPUT_POWER = 60; // Step auf 60 Watt\nconst HIGH_OUTPUT_POWER = 90; // Step auf 90 Watt\nconst OUTPUT_POWER_THRESHOLD = 100; // Step auf 100 Watt\nconst MAX_OUTPUT_POWER = 800; // Maximalleistung\nconst OUTPUT_POWER_STEP = 1; // Schrittgröße über 100 Watt\nconst HYSTERESIS = 50; // Hysterese von 50 Watt\n\nconst batteryLevel = msg.payload.batteryLevel;\nconst sunsetTimeString = msg.payload.sunsetTimestamp;\nconst sunriseTimeString = msg.payload.sunriseTimestamp;\nconst currentPower = msg.payload.currentPower;\nconst socHistory = flow.get('socHistory') || [];\n\n// Debug: Historie anzeigen\n//node.warn(\"SOC History: \" + JSON.stringify(socHistory));\n\nconst today = new Date();\nconst sunsetHours = parseInt(sunsetTimeString.split(':')[0], 10);\nconst sunsetMinutes = parseInt(sunsetTimeString.split(':')[1], 10);\nconst sunriseHours = parseInt(sunriseTimeString.split(':')[0], 10);\nconst sunriseMinutes = parseInt(sunriseTimeString.split(':')[1], 10);\n\nconst sunset = new Date(today.getFullYear(), today.getMonth(), today.getDate(), sunsetHours, sunsetMinutes);\nconst sunrise = new Date(today.getFullYear(), today.getMonth(), today.getDate(), sunriseHours, sunriseMinutes);\nconst sunsetTimestamp = sunset.getTime();\nconst sunriseTimestamp = sunrise.getTime();\nconst currentTime = new Date().getTime();\n\n// Überprüfen, ob der Akku an den letzten drei Tagen weniger als 100% geladen wurde\nconst threeDaysAgo = new Date();\nthreeDaysAgo.setDate(today.getDate() - NO_CHARGE_DAYS);\n\n// Letzte 3 Tage aus der Historie filtern\nconst recentEntries = socHistory.filter(entry => new Date(entry.time).getTime() > threeDaysAgo.getTime());\n\n// Debug: Zeige die gefilterten Einträge der letzten 3 Tage\n//node.warn(\"Filtered entries (last 3 days): \" + JSON.stringify(recentEntries));\n\n// Prüfen, ob in den letzten drei Tagen nicht 100 % erreicht wurde\nconst noFullChargeInThreeDays = recentEntries.every(entry => entry.value < FULL_CHARGE_THRESHOLD);\n\n// Debug: Zeige das Ergebnis der Überprüfung\n//node.warn(\"No full charge in last 3 days: \" + noFullChargeInThreeDays);\n\n// Wenn in den letzten 3 Tagen keine 100% erreicht wurden oder wenn der Akku unter 30% ist\nif (noFullChargeInThreeDays || batteryLevel <= LOW_BATTERY_THRESHOLD) {\n    msg.payload = 0; // Keine Leistung abgeben, nur laden\n    //    node.warn(\"No discharge allowed. Either no full charge in last 3 days or battery level below 30%.\");\n    return msg;\n}\n\n// Hole den zuletzt gesetzten Wert für die Leistung, fallback auf 0\nlet lastSetPower = flow.get('lastSetPower') || 0;\n\n// Debug: Zeige den aktuellen Wert von lastSetPower\n//node.warn(\"Last set power: \" + lastSetPower);\n\n// Normaler Entladungsbetrieb (wenn der Akku in den letzten 3 Tagen 100 % erreicht hat)\nif (currentTime > sunsetTimestamp || currentTime < sunriseTimestamp) {\n    let requiredPower;\n\n    if (currentPower > 0) {\n        // Wenn Strom bezogen wird, addiere den aktuellen Verbrauch zu lastSetPower\n        requiredPower = lastSetPower + currentPower;\n    } else {\n        // Berechne die erforderliche Leistung, um den Bezug auf 0 Watt zu bringen\n        requiredPower = lastSetPower + currentPower;\n    }\n\n    // Anwendung der Hysterese\n    if (requiredPower < lastSetPower - HYSTERESIS) {\n        requiredPower = lastSetPower - HYSTERESIS; // Nach unten anpassen\n    } else if (requiredPower > lastSetPower + HYSTERESIS) {\n        requiredPower = lastSetPower + HYSTERESIS; // Nach oben anpassen\n    }\n\n    // Leisungssprünge anwenden\n    if (requiredPower < MIN_OUTPUT_POWER) {\n        requiredPower = MIN_OUTPUT_POWER;\n    } else if (requiredPower < MEDIUM_OUTPUT_POWER) {\n        requiredPower = MEDIUM_OUTPUT_POWER;\n    } else if (requiredPower < HIGH_OUTPUT_POWER) {\n        requiredPower = HIGH_OUTPUT_POWER;\n    } else if (requiredPower < OUTPUT_POWER_THRESHOLD) {\n        requiredPower = OUTPUT_POWER_THRESHOLD; // Erlaubt 100 Watt\n    } else if (requiredPower > MAX_OUTPUT_POWER) {\n        requiredPower = MAX_OUTPUT_POWER;\n    } else if (requiredPower >= OUTPUT_POWER_THRESHOLD) {\n        // Wenn requiredPower 100 oder mehr ist, in Schritten erhöhen\n        requiredPower = Math.ceil((requiredPower - OUTPUT_POWER_THRESHOLD) / OUTPUT_POWER_STEP) * OUTPUT_POWER_STEP + OUTPUT_POWER_THRESHOLD;\n        if (requiredPower > MAX_OUTPUT_POWER) {\n            requiredPower = MAX_OUTPUT_POWER; // Begrenzung auf das Maximum\n        }\n    }\n\n    // Setze die erforderliche Leistung\n    msg.payload = requiredPower;\n\n    // Aktualisiere den lastSetPower im Flow-Kontext\n    flow.set('lastSetPower', requiredPower);\n\n    //    node.warn(\"Discharging battery with required power: \" + requiredPower);\n    return msg;\n} else {\n    // Wenn außerhalb der Entladezeiten, setze Leistung auf 0\n    msg.payload = 0; // Keine Leistung abgeben\n    //    node.warn(\"Outside allowed discharge times. No discharge.\");\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 400,
+        "wires": [
+            [
+                "c71ee820e1ab0bc8"
+            ]
+        ]
+    },
+    {
+        "id": "76e69cb2d3273ed4",
+        "type": "function",
+        "z": "9abdaa01a5d65ace",
+        "name": "AC-Switch",
+        "func": "// Konstanten für die Sonnenaufgangs- und Sonnenuntergangszeiten\nconst sunriseTime = msg.payload.sunriseTimestamp;  // Sonnenaufgangszeit (hh:mm)\nconst sunsetTime = msg.payload.sunsetTimestamp;    // Sonnenuntergangszeit (hh:mm)\n\n// Hilfsfunktion, um Zeit zu vergleichen\nfunction isTimeInRange(currentTime, startTime, endTime) {\n    let current = new Date(\"1970-01-01T\" + currentTime + \":00Z\");\n    let start = new Date(\"1970-01-01T\" + startTime + \":00Z\");\n    let end = new Date(\"1970-01-01T\" + endTime + \":00Z\");\n\n    return current >= start && current <= end;\n}\n\n// Aktuelle Zeit als 'hh:mm'\nlet now = new Date();\nlet currentTimeString = now.toTimeString().slice(0, 5);  // Extrahiere die aktuelle Zeit im Format 'hh:mm'\n\n// Aktueller Schaltzustand des Switches\nlet switchState = msg.payload.switchState;\n\n// Logik zum Sonnenaufgang: Schalter auf 1 setzen und prüfen\nif (isTimeInRange(currentTimeString, sunriseTime, sunsetTime)) {\n    if (switchState !== 1) {\n        // Schalter auf 1 setzen, wenn er falsch steht\n        switchState = 1;\n        msg.payload = 1;  // Nur die Zahl 1 ausgeben\n        node.send(msg);\n    }\n} else {\n    // Logik nach Sonnenuntergang: Schalter auf 2 setzen und prüfen\n    if (switchState !== 2) {\n        // Schalter auf 2 setzen, wenn er falsch steht\n        switchState = 2;\n        msg.payload = 2;  // Nur die Zahl 2 ausgeben\n        node.send(msg);\n    }\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 520,
+        "wires": [
+            [
+                "56d80a285be6e113"
+            ]
+        ]
+    },
+    {
+        "id": "5b213ca0bebf57da",
+        "type": "ioBroker out",
+        "z": "9abdaa01a5d65ace",
+        "name": "ACE1500 Ladeleistung",
+        "topic": "",
+        "ack": "false",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 840,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "56d80a285be6e113",
+        "type": "ioBroker out",
+        "z": "9abdaa01a5d65ace",
+        "name": "AC Modus wechseln",
+        "topic": "",
+        "ack": "false",
+        "autoCreate": "false",
+        "stateName": "",
+        "role": "",
+        "payloadType": "",
+        "readonly": "",
+        "stateUnit": "",
+        "stateMin": "",
+        "stateMax": "",
+        "x": 840,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "11a270b6442130e4",
+        "type": "join",
+        "z": "9abdaa01a5d65ace",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "6",
+        "count": "7",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 690,
+        "y": 280,
+        "wires": [
+            [
+                "dd53f9c8c64f13ad",
+                "76e69cb2d3273ed4",
+                "8a59ce1f72b6a336"
+            ]
+        ]
+    },
+    {
+        "id": "18cfb968d685cf22",
+        "type": "comment",
+        "z": "9abdaa01a5d65ace",
+        "name": "Zusammenfassen der msg",
+        "info": "",
+        "x": 690,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "8a59ce1f72b6a336",
+        "type": "function",
+        "z": "9abdaa01a5d65ace",
+        "name": "Berechnung laden",
+        "func": "// Konstanten für die Logik\nconst MIN_EINSPEISUNG = -150;  // Mindesteinspeisung in Watt, um das AC-Laden zu starten (negative Werte, da Einspeisung)\nconst START_AC_LEISTUNG = 100; // Startwert für das AC-Laden in Watt\nconst MAX_AC_LEISTUNG = 900;   // Maximale Ladeleistung des AC-Moduls in Watt\nconst MAX_GESAMTLEISTUNG = 1100; // Maximale Ladeleistung des Systems in Watt (AC + BKW)\nconst LEISTUNGSSCHRITT = 100;  // Schrittweite für die Anpassung der Ladeleistung\nconst ENT_PRELLZEIT = 60000;   // Entprellzeit in Millisekunden (60 Sekunden)\nconst SKALIERUNG = 1;          // Skalierung der Einspeisung\nconst BATTERY_FULL_THRESHOLD = 100; // Schwellenwert für den vollen Akku in Prozent\nconst STEIGERUNGSSCHRITT = 100;      // Fester Schritt zur Steigerung der Ladeleistung bei negativer Einspeisung\nconst ZIEL_NEGATIVE_LEISTUNG = -100; // Zielwert für die negative Einspeisung\n\n// Variablen zur Speicherung der letzten Änderung\nlet lastChangeTime = context.get('lastChangeTime') || 0;\nlet currentACLeistung = context.get('currentACLeistung') || 0;\n\n// Sonnenaufgangs- und -untergangszeiten (im Format 'hh:mm')\nconst sunriseTime = msg.payload.sunriseTimestamp;  // Sonnenaufgang hh:mm\nconst sunsetTime = msg.payload.sunsetTimestamp;    // Sonnenuntergang hh:mm\n\n// Hilfsfunktion, um Zeit zu vergleichen\nfunction isTimeInRange(currentTime, startTime, endTime) {\n    let current = new Date(\"1970-01-01T\" + currentTime + \":00Z\");\n    let start = new Date(\"1970-01-01T\" + startTime + \":00Z\");\n    let end = new Date(\"1970-01-01T\" + endTime + \":00Z\");\n\n    return current >= start && current <= end;\n}\n\n// Aktueller Zeitstempel\nlet now = new Date();\nlet currentTimeString = now.toTimeString().slice(0, 5);  // Extrahiere die aktuelle Zeit im Format 'hh:mm'\n\n// Eingangswert für die Einspeisung (negative Werte zeigen Einspeisung)\nlet currentpower = msg.payload.currentPower;  // Annahme: msg.payload enthält currentPower vom Zähler\nlet bkwPower = msg.payload.PV_Power; // Leistung des Balkonkraftwerks\nlet batteryLevel = msg.payload.batteryLevel; // Aktueller Ladezustand des Akkus\nlet AC_Power = msg.payload.AC_Power; // Hier den neuen AC_Power Wert verwenden\n\n// Fallback: Prüfen, ob wichtige Werte vorhanden sind\nif (typeof currentpower === 'undefined' || typeof bkwPower === 'undefined' || typeof batteryLevel === 'undefined') {\n    currentACLeistung = 0;\n    msg.payload = currentACLeistung;  // Setze die Ladeleistung auf 0\n    node.send(msg);\n    return;  // Beende die Ausführung, da die notwendigen Werte fehlen\n}\n\n// Wenn der Akku voll ist, stoppe die Ladung\nif (batteryLevel >= BATTERY_FULL_THRESHOLD) {\n    currentACLeistung = 0;\n    msg.payload = currentACLeistung;\n    node.send(msg);  // Senden der Nachricht\n    return;  // Beende die Ausführung\n}\n\n// Überprüfen, ob die aktuelle Zeit zwischen Sonnenaufgang und Sonnenuntergang liegt\nif (isTimeInRange(currentTimeString, sunriseTime, sunsetTime)) {\n    // Prüfen, ob die Entprellzeit seit der letzten Änderung abgelaufen ist\n    if (now.getTime() - lastChangeTime >= ENT_PRELLZEIT) {\n        \n        // **Logik zur Ladeleistungserhöhung bei negativer Einspeisung**\n        if (currentpower <= MIN_EINSPEISUNG && Math.abs(currentpower) > currentACLeistung) {\n            // Berechne die verfügbare Leistung zur AC-Ladung\n            let availablePower = Math.abs(currentpower * SKALIERUNG) - Math.abs(MIN_EINSPEISUNG);\n\n            // Bestimme die neue AC-Ladeleistung basierend auf der Einspeisung\n            let newACLeistung = Math.min(\n                START_AC_LEISTUNG + Math.floor(availablePower / STEIGERUNGSSCHRITT) * STEIGERUNGSSCHRITT,\n                MAX_AC_LEISTUNG\n            );\n\n            // Berechne die maximale AC-Ladeleistung unter Berücksichtigung der Gesamtladeleistung\n            let gesamtLeistung = bkwPower + newACLeistung;\n            if (gesamtLeistung > MAX_GESAMTLEISTUNG) {\n                newACLeistung = Math.max(0, MAX_GESAMTLEISTUNG - bkwPower);\n            }\n\n            // Runden auf den nächsten Schritt\n            newACLeistung = Math.floor(newACLeistung / LEISTUNGSSCHRITT) * LEISTUNGSSCHRITT;\n\n            // Wenn sich die AC-Leistung geändert hat\n            if (newACLeistung > currentACLeistung) {\n                currentACLeistung = newACLeistung;\n                lastChangeTime = now.getTime();\n                context.set('currentACLeistung', currentACLeistung);\n                context.set('lastChangeTime', lastChangeTime);\n                msg.payload = currentACLeistung;  // Setzt den Payload auf den berechneten Wert\n                node.send(msg);  // Senden der Nachricht\n            }\n        }\n        \n        // **Dynamische Reduktion der AC-Leistung, um Einspeisung nahe -100W zu halten, wenn `currentpower` positiv wird**\n        else if (currentpower > 0) {\n            let differenz = currentpower - ZIEL_NEGATIVE_LEISTUNG; // Differenz, um -100W Zielwert zu erreichen\n            \n            // Berechne die neue AC-Leistung\n            let newACLeistung = Math.max(0, currentACLeistung - differenz);\n\n            // Runden auf den nächsten Schritt\n            newACLeistung = Math.floor(newACLeistung / LEISTUNGSSCHRITT) * LEISTUNGSSCHRITT;\n\n            // Setze neue AC-Leistung, wenn sich etwas geändert hat\n            if (newACLeistung !== currentACLeistung) {\n                currentACLeistung = newACLeistung;\n                context.set('currentACLeistung', currentACLeistung);\n                msg.payload = currentACLeistung;\n                node.send(msg);\n            }\n        }\n    }\n} else {\n    // Falls außerhalb des Zeitfensters, Ladeleistung auf 0 setzen\n    currentACLeistung = 0;\n    msg.payload = currentACLeistung;  // Setze die Ladeleistung auf 0\n    node.send(msg);  // Weitergabe der Nachricht\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 460,
+        "wires": [
+            [
+                "5b213ca0bebf57da"
+            ]
+        ]
+    },
+    {
+        "id": "e458c8745cea0c73",
+        "type": "function",
+        "z": "9abdaa01a5d65ace",
+        "g": "eb4d668f4e91787c",
+        "name": "SOC Überwachung",
+        "func": "// Hole den aktuellen SoC-Wert\nlet currentSoC = msg.payload.batteryLevel;\n\n// Hole die Historie und den letzten gespeicherten Tag aus dem Flow Context\nlet socHistory = flow.get('socHistory') || [];\nlet lastSavedDate = flow.get('lastSavedDate') || '';\n\n// Hole den Sonnenuntergangszeitstempel\nlet sunsetTimestamp = msg.payload.sunsetTimestamp; // Erwartet im Format \"HH:MM\"\n\n// Berechne die Zeit bis zum Sonnenuntergang\nlet sunsetDate = new Date();\nlet [sunsetHours, sunsetMinutes] = sunsetTimestamp.split(':').map(Number);\nsunsetDate.setHours(sunsetHours, sunsetMinutes, 0, 0);\n\n// Überprüfe, ob der aktuelle SoC 100% beträgt und ob heute ein neuer Tag ist\nlet today = new Date().toISOString().split('T')[0]; // Nur das Datum (YYYY-MM-DD)\nif (currentSoC === 100 && today !== lastSavedDate) {\n    // Speichere den aktuellen Zeitstempel\n    let currentTime = new Date().toISOString();\n    \n    // Füge den neuen Eintrag zur Historie hinzu\n    socHistory.push({ time: currentTime, value: currentSoC });\n    \n    // Begrenze die Historie auf die letzten 30 Einträge\n    if (socHistory.length > 30) {\n        socHistory.shift(); // Entferne den ältesten Eintrag\n    }\n\n    // Speichere die aktualisierte Historie und den letzten gespeicherten Tag im Flow Context\n    flow.set('socHistory', socHistory);\n    flow.set('lastSavedDate', today);\n} else if (today !== lastSavedDate && new Date() > sunsetDate) {\n    // Nach Sonnenuntergang: Speichere den aktuellen SoC, wenn nicht bereits 100% gespeichert wurde\n    if (!socHistory.some(entry => entry.value === 100 && entry.time.split('T')[0] === today)) {\n        // Speichere den aktuellen Zeitstempel\n        let currentTime = new Date().toISOString();\n        \n        // Füge den neuen Eintrag zur Historie hinzu\n        socHistory.push({ time: currentTime, value: currentSoC });\n        \n        // Begrenze die Historie auf die letzten 30 Einträge\n        if (socHistory.length > 30) {\n            socHistory.shift(); // Entferne den ältesten Eintrag\n        }\n\n        // Speichere die aktualisierte Historie und den letzten gespeicherten Tag im Flow Context\n        flow.set('socHistory', socHistory);\n        flow.set('lastSavedDate', today);\n    }\n}\n\n// Gebe die Nachricht weiter\nreturn msg;\n",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d6ae5acd130df90d",
+        "type": "comment",
+        "z": "9abdaa01a5d65ace",
+        "g": "eb4d668f4e91787c",
+        "name": "Schreiben der Historie um Akku alle 3 Tage auf 100% zu laden ",
+        "info": "",
+        "x": 760,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "70df50d09d8b5102",
+        "type": "join",
+        "z": "9abdaa01a5d65ace",
+        "g": "eb4d668f4e91787c",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "2",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 630,
+        "y": 160,
+        "wires": [
+            [
+                "e458c8745cea0c73"
+            ]
+        ]
+    },
+    {
+        "id": "640583f47281ded1",
+        "type": "inject",
+        "z": "9abdaa01a5d65ace",
+        "g": "dede6f83a7768d68",
+        "name": "Historie zurücksetzen",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 720,
+        "wires": [
+            [
+                "84c3bdb579d3f2d9"
+            ]
+        ]
+    },
+    {
+        "id": "84c3bdb579d3f2d9",
+        "type": "function",
+        "z": "9abdaa01a5d65ace",
+        "g": "dede6f83a7768d68",
+        "name": "Historie löschen",
+        "func": "// Lösche die Historie und den letzten gespeicherten Tag\nflow.set('socHistory', []);\nflow.set('lastSavedDate', '');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 720,
+        "wires": [
+            [
+                "1c5bc514b4963983"
+            ]
+        ]
+    },
+    {
+        "id": "1c5bc514b4963983",
+        "type": "debug",
+        "z": "9abdaa01a5d65ace",
+        "g": "dede6f83a7768d68",
+        "name": "Debug Historie zurücksetzen",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "1d91bef9fbe63dd4",
+        "type": "inject",
+        "z": "9abdaa01a5d65ace",
+        "g": "dede6f83a7768d68",
+        "name": "Historie anzeigen",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 760,
+        "wires": [
+            [
+                "a0ad6cc0a65501f7"
+            ]
+        ]
+    },
+    {
+        "id": "a0ad6cc0a65501f7",
+        "type": "function",
+        "z": "9abdaa01a5d65ace",
+        "g": "dede6f83a7768d68",
+        "name": "Lese SOC Historie",
+        "func": "// Hole die SOC Historie aus dem Flow Context\nlet socHistory = flow.get('socHistory') || [];\n\n// Gebe die Historie aus\nmsg.payload = socHistory;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 760,
+        "wires": [
+            [
+                "cb1cecd61578f5ec"
+            ]
+        ]
+    },
+    {
+        "id": "cb1cecd61578f5ec",
+        "type": "debug",
+        "z": "9abdaa01a5d65ace",
+        "g": "dede6f83a7768d68",
+        "name": "SOC Historie",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "54159a1e9e1bbfdf",
+        "type": "inject",
+        "z": "9abdaa01a5d65ace",
+        "g": "dede6f83a7768d68",
+        "name": "Update SOC History",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 800,
+        "wires": [
+            [
+                "d4e88a592b93121d"
+            ]
+        ]
+    },
+    {
+        "id": "d4e88a592b93121d",
+        "type": "function",
+        "z": "9abdaa01a5d65ace",
+        "g": "dede6f83a7768d68",
+        "name": "Set SOC History to 100",
+        "func": "// Hole das heutige Datum und die Zeit\nlet today = new Date();\nlet threeDaysAgo = new Date(today);\nthreeDaysAgo.setDate(today.getDate() - 3);\n\n// Historie abrufen\nlet socHistory = flow.get('socHistory') || [];\n\n// Setze den SOC für die letzten drei Tage auf 100%\nfor (let i = 0; i < 3; i++) {\n    let dateToSet = new Date(threeDaysAgo);\n    dateToSet.setDate(threeDaysAgo.getDate() + i);\n    \n    // Überprüfen, ob der Eintrag für dieses Datum bereits existiert\n    let existingEntryIndex = socHistory.findIndex(entry => \n        new Date(entry.time).toISOString().split('T')[0] === dateToSet.toISOString().split('T')[0]);\n    \n    if (existingEntryIndex !== -1) {\n        // Wenn der Eintrag bereits existiert, aktualisiere den Wert\n        socHistory[existingEntryIndex].value = 100;\n    } else {\n        // Ansonsten neuen Eintrag hinzufügen\n        socHistory.push({\n            time: dateToSet.toISOString(),\n            value: 100\n        });\n    }\n}\n\n// Begrenze die Historie auf die letzten 30 Einträge\nif (socHistory.length > 30) {\n    socHistory.shift(); // Entferne den ältesten Eintrag\n}\n\n// Speichere die aktualisierte Historie im Flow Context\nflow.set('socHistory', socHistory);\n\n// Gebe die Nachricht weiter\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 410,
+        "y": 800,
+        "wires": [
+            [
+                "746fe6694760c815"
+            ]
+        ]
+    },
+    {
+        "id": "746fe6694760c815",
+        "type": "debug",
+        "z": "9abdaa01a5d65ace",
+        "g": "dede6f83a7768d68",
+        "name": "Debug SOC History",
+        "active": true,
+        "tosidebar": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "98eb5b3560a04688",
+        "type": "comment",
+        "z": "9abdaa01a5d65ace",
+        "g": "dede6f83a7768d68",
+        "name": "Manuelle Flows zum regeln der History nach reset ",
+        "info": "",
+        "x": 250,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "e1fdd720b4b14791",
+        "type": "ioBroker get",
+        "z": "9abdaa01a5d65ace",
+        "g": "1730e993370e8831",
+        "name": "batteryLevel",
+        "topic": "",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "ffb2ebc92c5f8f23"
+            ]
+        ]
+    },
+    {
+        "id": "6227991ce76749fa",
+        "type": "ioBroker get",
+        "z": "9abdaa01a5d65ace",
+        "g": "1730e993370e8831",
+        "name": "currentPower",
+        "topic": "",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "575c55efcab6a96e"
+            ]
+        ]
+    },
+    {
+        "id": "6b8fc6f4e491dff6",
+        "type": "ioBroker get",
+        "z": "9abdaa01a5d65ace",
+        "g": "1730e993370e8831",
+        "name": "sunsetTimestamp",
+        "topic": "",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 130,
+        "y": 340,
+        "wires": [
+            [
+                "f4070590db0f2747"
+            ]
+        ]
+    },
+    {
+        "id": "e122621fb28ef2eb",
+        "type": "comment",
+        "z": "9abdaa01a5d65ace",
+        "g": "1730e993370e8831",
+        "name": "Werte auslesen",
+        "info": "",
+        "x": 120,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "3e85811c715fb1e6",
+        "type": "ioBroker get",
+        "z": "9abdaa01a5d65ace",
+        "g": "1730e993370e8831",
+        "name": "sunriseTimestamp",
+        "topic": "",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 130,
+        "y": 400,
+        "wires": [
+            [
+                "f0d5ee67fdc6307c"
+            ]
+        ]
+    },
+    {
+        "id": "e00ff23b5588a061",
+        "type": "ioBroker get",
+        "z": "9abdaa01a5d65ace",
+        "g": "1730e993370e8831",
+        "name": "Aktuelle Leistung BKW",
+        "topic": "",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 140,
+        "y": 460,
+        "wires": [
+            [
+                "923a1228d42cfd56"
+            ]
+        ]
+    },
+    {
+        "id": "3b2e58ff09e9b9eb",
+        "type": "ioBroker get",
+        "z": "9abdaa01a5d65ace",
+        "g": "1730e993370e8831",
+        "name": "Zustand AC Modus",
+        "topic": "",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 130,
+        "y": 520,
+        "wires": [
+            [
+                "d5f7b766fb90a4cb"
+            ]
+        ]
+    },
+    {
+        "id": "19af02918cb5a823",
+        "type": "ioBroker get",
+        "z": "9abdaa01a5d65ace",
+        "g": "1730e993370e8831",
+        "name": "Aktuelle AC Leistung",
+        "topic": "",
+        "attrname": "payload",
+        "payloadType": "value",
+        "errOnInvalidState": "nothing",
+        "x": 140,
+        "y": 580,
+        "wires": [
+            [
+                "e215f3adc59be7c7"
+            ]
+        ]
+    },
+    {
+        "id": "ffb2ebc92c5f8f23",
+        "type": "function",
+        "z": "9abdaa01a5d65ace",
+        "g": "297d8f4fc85aa9fc",
+        "name": "Message",
+        "func": "msg.topic = \"batteryLevel\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 220,
+        "wires": [
+            [
+                "70df50d09d8b5102",
+                "11a270b6442130e4"
+            ]
+        ]
+    },
+    {
+        "id": "575c55efcab6a96e",
+        "type": "function",
+        "z": "9abdaa01a5d65ace",
+        "g": "297d8f4fc85aa9fc",
+        "name": "Message",
+        "func": "msg.topic = \"currentPower\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 280,
+        "wires": [
+            [
+                "11a270b6442130e4"
+            ]
+        ]
+    },
+    {
+        "id": "f4070590db0f2747",
+        "type": "function",
+        "z": "9abdaa01a5d65ace",
+        "g": "297d8f4fc85aa9fc",
+        "name": "Message",
+        "func": "msg.topic = \"sunsetTimestamp\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "70df50d09d8b5102",
+                "11a270b6442130e4"
+            ]
+        ]
+    },
+    {
+        "id": "f0d5ee67fdc6307c",
+        "type": "function",
+        "z": "9abdaa01a5d65ace",
+        "g": "297d8f4fc85aa9fc",
+        "name": "Message",
+        "func": "msg.topic = \"sunriseTimestamp\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 400,
+        "wires": [
+            [
+                "11a270b6442130e4"
+            ]
+        ]
+    },
+    {
+        "id": "bcbf8d6a85d7e762",
+        "type": "comment",
+        "z": "9abdaa01a5d65ace",
+        "g": "297d8f4fc85aa9fc",
+        "name": "Topic an msg ",
+        "info": "",
+        "x": 370,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "923a1228d42cfd56",
+        "type": "function",
+        "z": "9abdaa01a5d65ace",
+        "g": "297d8f4fc85aa9fc",
+        "name": "Message",
+        "func": "msg.topic = \"PV_Power\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 460,
+        "wires": [
+            [
+                "11a270b6442130e4"
+            ]
+        ]
+    },
+    {
+        "id": "d5f7b766fb90a4cb",
+        "type": "function",
+        "z": "9abdaa01a5d65ace",
+        "g": "297d8f4fc85aa9fc",
+        "name": "Message",
+        "func": "msg.topic = \"switchState\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 520,
+        "wires": [
+            [
+                "11a270b6442130e4"
+            ]
+        ]
+    },
+    {
+        "id": "e215f3adc59be7c7",
+        "type": "function",
+        "z": "9abdaa01a5d65ace",
+        "g": "297d8f4fc85aa9fc",
+        "name": "Message",
+        "func": "msg.topic = \"AC_Power\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 580,
+        "wires": [
+            [
+                "11a270b6442130e4"
+            ]
+        ]
+    }
+]

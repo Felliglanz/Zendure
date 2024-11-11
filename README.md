@@ -1,7 +1,7 @@
 ![image](https://github.com/user-attachments/assets/f9e240ff-8931-41a2-a3eb-6e9b49a15574)
 
 
-# AC-Ladungs- und Entladungssteuerung für Zendure Solarflow 1200
+# AC-Ladungs- und Entladungssteuerung für Zendure Solarflow 1200 kombiniert mit ACE1500
 
 Dieser Node-RED-Flow steuert sowohl das Laden als auch das Entladen einer Batterie des **Zendure Solarflow 1200** mit Solarstrom. Er wurde entwickelt, um den Akku effizient zu laden, wenn überschüssiger Strom verfügbar ist, und ihn zu entladen, wenn der Energiebedarf im Haushalt steigt oder die Batterie vollständig geladen ist. Zusätzlich beinhaltet der Flow eine SOC-History. Wenn mehr als 3 Tage keine 100% erreicht wurden, wird das System keine Leistung ins Haus abgeben, bis dieser Zustand erreicht ist. 
 

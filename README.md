@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/d2c6b45e-1a54-4b34-bc73-c1f1eaf27974)
+![image](https://github.com/user-attachments/assets/f9e240ff-8931-41a2-a3eb-6e9b49a15574)
+
 
 # AC-Ladungs- und Entladungssteuerung für Zendure Solarflow 1200
 

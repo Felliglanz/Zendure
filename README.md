@@ -1,66 +1,51 @@
 ![image](https://github.com/user-attachments/assets/d2c6b45e-1a54-4b34-bc73-c1f1eaf27974)
 
-# Node-RED Flow für Batteriemanagement und AC-Ladung/Entladung mit Überschuss-Energie für Solarflow System (HUB1200)
+# AC-Ladungs- und Entladungssteuerung für Zendure Solarflow 1200
 
-Dieses Repository enthält einen Node-RED-Flow, der das Batteriemanagement in einem Zwndure Solarflowsystem steuert und sicherstellt, dass der Akku mit überschüssiger Solarenergie geladen wird, ohne Netzstrom zu beziehen. Der Flow verhindert Überladung und sorgt für eine effiziente Nutzung der verfügbaren Solarenergie. Ebenso steuert er die Entladung des Akkus. Beides wird gesteuert nach den Sonnenauf oder Untergangszeiten. Da ich parralel zum dem BKW noch eine große PV-Anlage betreibe, passt dies gut zu meinem Usecase. 
+Dieser Node-RED-Flow steuert sowohl das Laden als auch das Entladen einer Batterie des **Zendure Solarflow 1200** mit Solarstrom. Er wurde entwickelt, um den Akku effizient zu laden, wenn überschüssiger Strom verfügbar ist, und ihn zu entladen, wenn der Energiebedarf im Haushalt steigt oder die Batterie vollständig geladen ist. Zusätzlich beinhaltet der Flow eine SOC-History. Wenn mehr als 3 Tage keine 100% erreicht wurden, wird das System keine Leistung ins Haus abgeben, bis dieser Zustand erreicht ist. 
 
-## Funktionen
+## Funktionsweise
 
-- **Batteriemanagement**: Der Flow überwacht den Ladezustand der Batterie und steuert das Laden oder Entladen basierend auf festgelegten Schwellenwerten.
-- **AC-Lade-Management**: Das AC-Lademodul (ACE1500) wird nur dann aktiviert, wenn überschüssige Solarenergie zur Verfügung steht und keine Energie aus dem Netz bezogen wird.
-- **Entlade-Management**: Die Entladung des Akkus wird anhand des aktuellen Hausverbrauchs berechnet. Das es sich um ein BKW handelt, ist die maximale Abgabe auf 800 Watt begrenzt. Alle Werte lassen sich aber über variablen anpassen. 
-- **Notfall-Ladung**: Wenn der Ladezustand der Batterie unter 15% fällt, wird automatisch der Notfallmodus aktiviert, um die Batterie auf 20% aufzuladen.
-- **Überschuss-Erkennung**: Der Flow erkennt überschüssige Solarenergie und lädt die Batterie nur dann, wenn der **Leistungswert (`msg.payload.currentpower`)** aus dem Netz negativ ist, also mehr Energie produziert wird als verbraucht. Eine Schwelle (z.B. -100W) muss definiert werden, damit das System nur mit Solarenergie lädt.
+### 1. **AC-Ladung basierend auf überschüssigem Solarstrom**
+- Der Flow prüft regelmäßig den aktuellen Stromverbrauch des Haushalts (wird über den `currentpower`-Wert ermittelt, der von einem Leistungsmesser im Hausanschluss kommt).
+- Solange überschüssiger Strom (negative Werte) vorhanden ist, wird die Batterie mit einer variablen Leistung geladen.
+- Der Flow versucht, die Batterie nur mit überschüssigem Strom zu laden, um eine Null-Einspeisung zu gewährleisten und keine Energie aus dem Netz zu ziehen.
 
-## Systemanforderungen
+### 2. **Notladefunktion im Winter**
+- Wenn der Akku auf unter 15% fällt, aktiviert der Flow den Notladebetrieb. In diesem Fall wird der Akku auf 20% aufgeladen, um Schäden durch Tiefentladung zu vermeiden.
+- Sobald der Akku 20% erreicht, schaltet der Flow in den normalen Betrieb zurück und setzt das Laden nur mit überschüssigem Solarstrom fort.
 
-- **Node-RED**: Ein Tool zur Programmierung von Abläufen, das verschiedene Geräte, APIs und Online-Dienste miteinander verbindet.
-- **ioBroker**: Ein Hausautomationssystem, das mit deinem Solarsystem und dem Batterie-Management interagiert.
-- **Zendure**: Ein Batteriesystem, das Überladung verhindert und den Akku in gutem Zustand hält.
-- **Leistungsmesser**: Benötigt wird ein Lesitungsmesser im Hausanschluss. Zum Beispiel Tasmota Lesekopf oder Shelly. Dieser muss einen Leistungswert ausgeben der positiv oder negativ ist, je nachdem ob man einspeißt oder bezieht. 
+### 3. **Akku-Entladung**
+- Wenn die Batterie vollständig geladen ist und überschüssiger Strom aus dem Haushalt entnommen wird, kann die Batterie entladen werden, um den Strombedarf zu decken.
+- Der Flow ermöglicht es, die Batterie zu entladen, wenn kein überschüssiger Solarstrom vorhanden ist, sodass der Haushalt weiterhin mit Strom versorgt wird, ohne auf das Netz zurückgreifen zu müssen.
+- Die SOC-History überwacht, ob der Akku mehr als 3 Tage nicht bei 100% war. Da das Zendure System hier realtiv empfindlich ist, habe ich das so eingepflegt. 
 
-## Ablauf des Flows
+### 4. **Parameter und Einstellungen**
+- **Aktuelle Leistungswerte (`currentpower`)**: Dieser Wert wird regelmäßig abgerufen, um festzustellen, ob überschüssiger Strom für die Ladung verfügbar ist. Ein positiver Wert bedeutet, dass Strom aus dem Netz bezogen wird, während ein negativer Wert auf überschüssigen Solarstrom hinweist.
+- **Akku-Ladegrenzen**: Der Flow überprüft den Akkustand und stellt sicher, dass der Akku im Notfall auf 20% aufgeladen wird, um eine Tiefentladung zu verhindern. Der normale Ladebereich ist zwischen 20% und 100%.
+- **Entladegrenzen**: Wenn der Akku vollständig geladen ist, wird er entladen, wenn dies für den Haushalt erforderlich ist.
 
-1. **Überwachung des Akkus**:
-   - Der Flow überwacht kontinuierlich den Ladezustand der Batterie und schaltet die Ladeleistung je nach Zustand ein oder aus.
-   - Bei einem Ladezustand unter 20% wird der **Notfallmodus** aktiviert, und der Akku wird auf 20% aufgeladen.
-   - Wenn der Akku mehr als 20% hat, stoppt der Flow das Laden, um Überladung zu verhindern.
+## Voraussetzungen
 
-2. **Erkennung von Überschuss-Energie**:
-   - Der Flow prüft den **Leistungswert** (`msg.payload.currentpower`) von einem Leistungsmesser (z.B. Shelly oder Tasmota).
-   - Wenn der Wert negativ ist (mehr Solarenergie wird produziert als verbraucht), beginnt der Flow mit dem Laden der Batterie.
-   - Ist der Wert positiv (Strom wird aus dem Netz bezogen), wird das Laden gestoppt oder reduziert.
-
-3. **Lade-Logik**:
-   - Das AC-Lademodul wird nur aktiviert, wenn ein Überschuss an Solarenergie vorhanden ist, und das Netz wird nicht beansprucht. Der Flow lädt die Batterie mit einer variablen Leistung, wenn der Stromüberschuss den definierten Schwellenwert überschreitet.
-   - Wenn der Leistungswert positiv wird (d.h., Netzstrom fließt), wird das Laden gestoppt, um eine Einspeisung in das Netz zu vermeiden.
-
-4. **Wintermodus**:
-   - Bei längeren Perioden ohne Sonne (z.B. in den Wintermonaten) sorgt der Flow dafür, dass die Batterie bei einem Ladezustand unter 15% auf 20% aufgeladen wird, ohne überladen zu werden.
-   - Sobald der Akku 20% erreicht, wird das Laden gestoppt, bis wieder überschüssige Solarenergie zur Verfügung steht.
+- **Node-RED**: Der Flow ist für die Nutzung in Node-RED konzipiert und sollte auf einem Server oder Raspberry Pi installiert sein.
+- **Leistungsmesser**: Du benötigst einen Leistungsmesser wie einen Shelly oder Lesekopf mit Tasmota, der den aktuellen Stromverbrauch (`currentpower`) ermittelt.
+- **Node-RED Nodes**: Der Flow verwendet verschiedene Nodes wie Switch, Inject und Function, um die Lade- und Entladefunktionen zu steuern.
 
 ## Installation
 
-1. Installiere Node-RED auf deinem Server.
-2. Richte die notwendigen Abhängigkeiten für die Verbindung zu ioBroker und deinem Batterie-Management-System (Zendure) ein.
-3. Importiere den bereitgestellten Node-RED-Flow in dein Node-RED-System.
-4. Konfiguriere den Flow mit deinen spezifischen Parametern wie den Schwellenwerten für den Akkustand, den Ladeleistungen und den Solarwerten.
-5. Definiere einen Überschusswert (z.B. -100W) für den Leistungswert (`msg.payload.currentpower`), damit das System nur mit überschüssiger Solarenergie lädt.
+1. Stelle sicher, dass du Node-RED auf deinem System installiert hast.
+2. Importiere diesen Flow in dein Node-RED Dashboard.
+3. Konfiguriere deinen Leistungsmesser, damit der `currentpower`-Wert korrekt übermittelt wird.
+4. Installiere einen Adapter der die Sonnenzeiten bereit stellt im String Format. 
 
-## Zukünftige Verbesserungen
+## Anpassungen
 
-- **Dynamische Anpassung der Ladeparameter**: Erweitere die Logik, um Ladeparameter basierend auf Wettervorhersagen oder Netzbedingungen dynamisch anzupassen.
-- **Erweiterte Energieverwaltung**: Integriere zusätzliche Energiequellen wie Wind- oder Netzstrom für eine bessere Effizienz und Lastenverteilung.
-- **Mobile Benachrichtigungen**: Sende Benachrichtigungen, wenn kritische Akkustände erreicht werden oder der Flow in den Notfallmodus wechselt.
+- Du kannst die Ladeleistung anpassen, indem du den Wert für den AC-Lader änderst (z.B. 900W).
+- Ebenso kannst du die Schwellenwerte für den Notladebetrieb (15% für den Einstieg und 20% für das Ziel) nach deinen Bedürfnissen anpassen.
+- Die Entladegrenzen und -logik können ebenfalls angepasst werden, je nach dem gewünschten Verhalten des Systems.
 
-## Mitwirken
+## Haftungsausschluss
 
-Forke das Repository, nehme Änderungen vor und erstelle Pull Requests! Alle Verbesserungen, Bugfixes oder neue Funktionen sind willkommen.
+Die Verwendung dieses Node-RED-Flows erfolgt auf eigene Gefahr. Der Autor übernimmt keine Haftung für Schäden, die durch die Nutzung dieses Flows entstehen, einschließlich, aber nicht beschränkt auf Schäden an Geräten, Datenverlust oder andere unerwünschte Auswirkungen. Stellen Sie sicher, dass Sie die Funktionsweise des Flows verstehen und testen, bevor Sie ihn in einer produktiven Umgebung einsetzen.
 
-## Lizenz
-
-Dieses Projekt ist unter der MIT-Lizenz lizenziert – siehe die [LICENSE](LICENSE)-Datei für Details.
-
----
-
-Bei Fragen oder Problemen öffne bitte ein Issue oder kontaktiere mich direkt!
+Verwenden Sie den Flow nur, wenn Sie sich der Risiken bewusst sind und geeignete Sicherheitsvorkehrungen getroffen haben.

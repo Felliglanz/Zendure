@@ -1,6 +1,6 @@
 [
     {
-        "id": "82a7c230100c480c",
+        "id": "0b5031412cee0eaa",
         "type": "tab",
         "label": "Zendure HUB1200+ACE1500",
         "disabled": false,
@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "397ccebeefcf4263",
+        "id": "927f147ed2bdf1d6",
         "type": "group",
-        "z": "82a7c230100c480c",
+        "z": "0b5031412cee0eaa",
         "style": {
             "stroke": "#999999",
             "stroke-opacity": "1",
@@ -21,19 +21,19 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "776cd6eadb7c7d25",
-            "30290a5f52190ee3",
-            "6e9cd2b3d7f289dd"
+            "9efb3ef81a5face9",
+            "89eb3e69a7272d5c",
+            "813bcbcb4dd208bd"
         ],
-        "x": 894,
-        "y": 19,
+        "x": 934,
+        "y": 39,
         "w": 492,
         "h": 122
     },
     {
-        "id": "bb717f70d54ecd40",
+        "id": "ea5d3ed2dfaeff5f",
         "type": "group",
-        "z": "82a7c230100c480c",
+        "z": "0b5031412cee0eaa",
         "style": {
             "stroke": "#999999",
             "stroke-opacity": "1",
@@ -44,26 +44,26 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "538c8e8d8bf9796b",
-            "ce90098865c417b9",
-            "92375352a213383b",
-            "80ed08259585039e",
-            "a5f402dbc56a9327",
-            "4331cd94a8f163a7",
-            "ef194cdc9fc8f858",
-            "5752efb5d1b401ad",
-            "dbce8608dbc63624",
-            "7e0d41534c8d4020"
+            "008e123ea5739c2d",
+            "f9176b8fdff7f38f",
+            "e91c14b0fdc4c42b",
+            "038a8808f0eca702",
+            "70f454c0c1f23ea2",
+            "cf2de3a3e855c5e9",
+            "6789e3233bbcea18",
+            "22647fd2d942b0ce",
+            "c546c64bc65e0de5",
+            "4f70ced48063a3f8"
         ],
-        "x": 34,
-        "y": 879,
+        "x": 74,
+        "y": 899,
         "w": 852,
         "h": 202
     },
     {
-        "id": "a1e774ae61e09aed",
+        "id": "952c070dee6d7e09",
         "type": "group",
-        "z": "82a7c230100c480c",
+        "z": "0b5031412cee0eaa",
         "style": {
             "stroke": "#999999",
             "stroke-opacity": "1",
@@ -74,27 +74,27 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "e76356fa43f96bf2",
-            "830ec7735ce6e86c",
-            "cabbab426bbc1039",
-            "07b26fea82327d92",
-            "9341238566bf3afd",
-            "c411289990e1194d",
-            "e76e358bd2f56a8a",
-            "b3dad2cbc313bd63",
-            "ffd1de7cb462eead",
-            "778378a1cb8a2baa",
-            "b0b39be70cd0944e"
+            "2d7977f51f18d783",
+            "91e232fc7f53776f",
+            "a79f94a9b6bce769",
+            "285f0edd66d65d84",
+            "4537d937228bb6b4",
+            "85bcbcdacefe0d77",
+            "c4630437cc20c1a1",
+            "6df7e6c692545c10",
+            "44fc944b03010d4c",
+            "d34eaf17468659dd",
+            "8eb264856d7995c9"
         ],
-        "x": 34,
-        "y": 199,
+        "x": 74,
+        "y": 219,
         "w": 252,
         "h": 662
     },
     {
-        "id": "5826a0a7cba6fa0d",
+        "id": "cd0e93157c38cdb0",
         "type": "group",
-        "z": "82a7c230100c480c",
+        "z": "0b5031412cee0eaa",
         "style": {
             "stroke": "#999999",
             "stroke-opacity": "1",
@@ -105,27 +105,27 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "3342fac26600753b",
-            "294f78ab00f86c52",
-            "b7bea307ca23db82",
-            "0d5a9a2af8ecd53d",
-            "6fd6ba69abea955f",
-            "20995947f9d5048a",
-            "497b212caf60d722",
-            "0f460be04280ac46",
-            "7a98b4bc9054a3d2",
-            "fcb0ded8394f1246",
-            "e98f695f6c81ec06"
+            "9a3c1085d6f1abcf",
+            "6fba4427a63c48d3",
+            "ba93f4adbcb2016e",
+            "dc073d8c35a14a0c",
+            "4d2e658f1b2a9e71",
+            "cde5e695570a417d",
+            "6ee393f0551e96c2",
+            "90886270870a5280",
+            "34005b614e400601",
+            "9276e4037c5ea13f",
+            "48befa020ea4fba5"
         ],
-        "x": 314,
-        "y": 199,
+        "x": 354,
+        "y": 219,
         "w": 192,
         "h": 662
     },
     {
-        "id": "88492b6ac31fb141",
+        "id": "47551ece5ab888ba",
         "type": "group",
-        "z": "82a7c230100c480c",
+        "z": "0b5031412cee0eaa",
         "style": {
             "stroke": "#999999",
             "stroke-opacity": "1",
@@ -136,18 +136,18 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "bf66065474e2d158",
-            "6337cc9a2e8656d3"
+            "91f151656e6c4000",
+            "8ba70a97251133e5"
         ],
-        "x": 554,
-        "y": 279,
+        "x": 594,
+        "y": 299,
         "w": 272,
         "h": 122
     },
     {
-        "id": "318602c5deee36c8",
+        "id": "a0192ee5aabebdd5",
         "type": "group",
-        "z": "82a7c230100c480c",
+        "z": "0b5031412cee0eaa",
         "style": {
             "stroke": "#999999",
             "stroke-opacity": "1",
@@ -158,22 +158,22 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "432c223f9d2ce1d1",
-            "30fd2ac3a59752c6",
-            "1efd94ab5a30e375",
-            "1783e42f3c451664",
-            "a807df740950921f",
-            "ee0f70efbb814721"
+            "e3dde5259246a9e3",
+            "073fb58071e2f0be",
+            "9ffcbeeb1210cc0e",
+            "8b7b5cec2f56e54d",
+            "797997ca351092b4",
+            "d26bdf9d310613f7"
         ],
-        "x": 314,
-        "y": 19,
+        "x": 354,
+        "y": 39,
         "w": 572,
         "h": 162
     },
     {
-        "id": "c0bbe3731606ef3e",
+        "id": "085b9ba3f7ac15a3",
         "type": "group",
-        "z": "82a7c230100c480c",
+        "z": "0b5031412cee0eaa",
         "style": {
             "stroke": "#999999",
             "stroke-opacity": "1",
@@ -184,27 +184,27 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "86bf0899a61d5496",
-            "b1f03947cfb5c475",
-            "1d5fc5c1abf89f1c",
-            "cb13b1452ec8ba6e",
-            "0d11e333e693c1ca",
-            "09c54dbd4b888b46",
-            "90c4fdd0ebf700d1",
-            "3ecfa20203d6c366",
-            "a6ac5a1f977118db",
-            "325d0f0bcc63a68c",
-            "09c0416acfd5b4d3"
+            "5f1452465939b36f",
+            "c3ca2522076579f4",
+            "9171e9c12c6c0e81",
+            "7588e75a62f84615",
+            "792b68fb82c4abc3",
+            "4f5ece56d5a2c5b4",
+            "062f4b53b12d6efa",
+            "d4bcda088938f0de",
+            "bcc4541dc7a8308c",
+            "ba6e48b443ac6e7c",
+            "5935455b3647b5e0"
         ],
-        "x": 554,
-        "y": 499,
+        "x": 594,
+        "y": 519,
         "w": 992,
         "h": 242
     },
     {
-        "id": "21a5666bcfa4c6e5",
+        "id": "8cf40266f7181764",
         "type": "group",
-        "z": "82a7c230100c480c",
+        "z": "0b5031412cee0eaa",
         "style": {
             "stroke": "#999999",
             "stroke-opacity": "1",
@@ -215,20 +215,20 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "f7391a5075d179c2",
-            "ad9bd43afe6a048b",
-            "32e1e314f4162ca7",
-            "5c8c7f5d4ab41e30"
+            "fb755b617c9eb224",
+            "2286095894ab0747",
+            "97ddc75f5b495e0d",
+            "4dee9c7275107a61"
         ],
-        "x": 1534,
-        "y": 219,
+        "x": 1574,
+        "y": 239,
         "w": 312,
         "h": 242
     },
     {
-        "id": "92cbe6c0ffdd3396",
+        "id": "c95530c92e33afc8",
         "type": "group",
-        "z": "82a7c230100c480c",
+        "z": "0b5031412cee0eaa",
         "style": {
             "stroke": "#999999",
             "stroke-opacity": "1",
@@ -239,20 +239,20 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "99dfbf64804fdac9",
-            "239e9f3a54b4c5fb",
-            "c1ce415fbfa73790",
-            "36df9d2b9351dbe2"
+            "dc708c70e36c6bf5",
+            "119fa4bc336da87c",
+            "7cdda5d82e152878",
+            "8ffff8cc4a417b7f"
         ],
-        "x": 894,
-        "y": 219,
+        "x": 934,
+        "y": 239,
         "w": 292,
         "h": 242
     },
     {
-        "id": "c58a08769ed153ac",
+        "id": "3e3151d733d24bed",
         "type": "inject",
-        "z": "82a7c230100c480c",
+        "z": "0b5031412cee0eaa",
         "name": "Alle 2 Sekunden",
         "props": [
             {
@@ -270,37 +270,37 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
-        "y": 100,
+        "x": 190,
+        "y": 120,
         "wires": [
             [
-                "830ec7735ce6e86c",
-                "07b26fea82327d92",
-                "e76356fa43f96bf2",
-                "9341238566bf3afd",
-                "c411289990e1194d",
-                "e76e358bd2f56a8a",
-                "b3dad2cbc313bd63",
-                "ffd1de7cb462eead",
-                "778378a1cb8a2baa",
-                "b0b39be70cd0944e"
+                "91e232fc7f53776f",
+                "285f0edd66d65d84",
+                "2d7977f51f18d783",
+                "4537d937228bb6b4",
+                "85bcbcdacefe0d77",
+                "c4630437cc20c1a1",
+                "6df7e6c692545c10",
+                "44fc944b03010d4c",
+                "d34eaf17468659dd",
+                "8eb264856d7995c9"
             ]
         ]
     },
     {
-        "id": "b7c3a80ff12538c2",
+        "id": "00e37187a04d2641",
         "type": "comment",
-        "z": "82a7c230100c480c",
+        "z": "0b5031412cee0eaa",
         "name": "Abfrage alle 2 Sekunden",
         "info": "",
-        "x": 150,
-        "y": 60,
+        "x": 190,
+        "y": 80,
         "wires": []
     },
     {
-        "id": "8850d6e798ba1ec9",
+        "id": "33b40993f6e729ff",
         "type": "gate",
-        "z": "82a7c230100c480c",
+        "z": "0b5031412cee0eaa",
         "name": "Normal oder Notbetrieb",
         "controlTopic": "gate_control",
         "defaultState": "open",
@@ -311,18 +311,18 @@
         "statusCmd": "status",
         "persist": false,
         "storeName": "default",
-        "x": 1390,
-        "y": 360,
+        "x": 1430,
+        "y": 380,
         "wires": [
             [
-                "32e1e314f4162ca7"
+                "97ddc75f5b495e0d"
             ]
         ]
     },
     {
-        "id": "9546f288421561f6",
+        "id": "dd601dbd1211311e",
         "type": "gate",
-        "z": "82a7c230100c480c",
+        "z": "0b5031412cee0eaa",
         "name": "Normal oder Notbetrieb",
         "controlTopic": "gate_control",
         "defaultState": "open",
@@ -333,18 +333,18 @@
         "statusCmd": "status",
         "persist": false,
         "storeName": "default",
-        "x": 1390,
-        "y": 420,
+        "x": 1430,
+        "y": 440,
         "wires": [
             [
-                "5c8c7f5d4ab41e30"
+                "4dee9c7275107a61"
             ]
         ]
     },
     {
-        "id": "2d6bb5567de4de9e",
+        "id": "71e5e584f0dc108c",
         "type": "gate",
-        "z": "82a7c230100c480c",
+        "z": "0b5031412cee0eaa",
         "name": "Normal oder Notbetrieb",
         "controlTopic": "gate_control",
         "defaultState": "open",
@@ -355,19 +355,19 @@
         "statusCmd": "status",
         "persist": false,
         "storeName": "default",
-        "x": 1390,
-        "y": 300,
+        "x": 1430,
+        "y": 320,
         "wires": [
             [
-                "ad9bd43afe6a048b"
+                "2286095894ab0747"
             ]
         ]
     },
     {
-        "id": "776cd6eadb7c7d25",
+        "id": "9efb3ef81a5face9",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "397ccebeefcf4263",
+        "z": "0b5031412cee0eaa",
+        "g": "927f147ed2bdf1d6",
         "name": "SOC Überwachung",
         "func": "// Hole den aktuellen SoC-Wert\nlet currentSoC = msg.payload.batteryLevel;\n\n// Hole die Historie und den letzten gespeicherten Tag aus dem Flow Context\nlet socHistory = flow.get('socHistory') || [];\nlet lastSavedDate = flow.get('lastSavedDate') || '';\n\n// Hole den Sonnenuntergangszeitstempel\nlet sunsetTimestamp = msg.payload.sunsetTimestamp; // Erwartet im Format \"HH:MM\"\n\n// Berechne die Zeit bis zum Sonnenuntergang\nlet sunsetDate = new Date();\nlet [sunsetHours, sunsetMinutes] = sunsetTimestamp.split(':').map(Number);\nsunsetDate.setHours(sunsetHours, sunsetMinutes, 0, 0);\n\n// Überprüfe, ob der aktuelle SoC 100% beträgt und ob heute ein neuer Tag ist\nlet today = new Date().toISOString().split('T')[0]; // Nur das Datum (YYYY-MM-DD)\nif (currentSoC === 100 && today !== lastSavedDate) {\n    // Speichere den aktuellen Zeitstempel\n    let currentTime = new Date().toISOString();\n    \n    // Füge den neuen Eintrag zur Historie hinzu\n    socHistory.push({ time: currentTime, value: currentSoC });\n    \n    // Begrenze die Historie auf die letzten 30 Einträge\n    if (socHistory.length > 30) {\n        socHistory.shift(); // Entferne den ältesten Eintrag\n    }\n\n    // Speichere die aktualisierte Historie und den letzten gespeicherten Tag im Flow Context\n    flow.set('socHistory', socHistory);\n    flow.set('lastSavedDate', today);\n} else if (today !== lastSavedDate && new Date() > sunsetDate) {\n    // Nach Sonnenuntergang: Speichere den aktuellen SoC, wenn nicht bereits 100% gespeichert wurde\n    if (!socHistory.some(entry => entry.value === 100 && entry.time.split('T')[0] === today)) {\n        // Speichere den aktuellen Zeitstempel\n        let currentTime = new Date().toISOString();\n        \n        // Füge den neuen Eintrag zur Historie hinzu\n        socHistory.push({ time: currentTime, value: currentSoC });\n        \n        // Begrenze die Historie auf die letzten 30 Einträge\n        if (socHistory.length > 30) {\n            socHistory.shift(); // Entferne den ältesten Eintrag\n        }\n\n        // Speichere die aktualisierte Historie und den letzten gespeicherten Tag im Flow Context\n        flow.set('socHistory', socHistory);\n        flow.set('lastSavedDate', today);\n    }\n}\n\n// Gebe die Nachricht weiter\nreturn msg;\n",
         "outputs": 0,
@@ -376,26 +376,26 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1190,
-        "y": 100,
+        "x": 1230,
+        "y": 120,
         "wires": []
     },
     {
-        "id": "30290a5f52190ee3",
+        "id": "89eb3e69a7272d5c",
         "type": "comment",
-        "z": "82a7c230100c480c",
-        "g": "397ccebeefcf4263",
+        "z": "0b5031412cee0eaa",
+        "g": "927f147ed2bdf1d6",
         "name": "Schreiben der Historie um Akku alle 3 Tage auf 100% zu laden ",
         "info": "",
-        "x": 1140,
-        "y": 60,
+        "x": 1180,
+        "y": 80,
         "wires": []
     },
     {
-        "id": "6e9cd2b3d7f289dd",
+        "id": "813bcbcb4dd208bd",
         "type": "join",
-        "z": "82a7c230100c480c",
-        "g": "397ccebeefcf4263",
+        "z": "0b5031412cee0eaa",
+        "g": "927f147ed2bdf1d6",
         "name": "",
         "mode": "custom",
         "build": "object",
@@ -412,19 +412,19 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 1010,
-        "y": 100,
+        "x": 1050,
+        "y": 120,
         "wires": [
             [
-                "776cd6eadb7c7d25"
+                "9efb3ef81a5face9"
             ]
         ]
     },
     {
-        "id": "538c8e8d8bf9796b",
+        "id": "008e123ea5739c2d",
         "type": "inject",
-        "z": "82a7c230100c480c",
-        "g": "bb717f70d54ecd40",
+        "z": "0b5031412cee0eaa",
+        "g": "ea5d3ed2dfaeff5f",
         "name": "Historie zurücksetzen",
         "props": [],
         "repeat": "",
@@ -434,19 +434,19 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
-        "y": 960,
+        "x": 220,
+        "y": 980,
         "wires": [
             [
-                "ce90098865c417b9"
+                "f9176b8fdff7f38f"
             ]
         ]
     },
     {
-        "id": "ce90098865c417b9",
+        "id": "f9176b8fdff7f38f",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "bb717f70d54ecd40",
+        "z": "0b5031412cee0eaa",
+        "g": "ea5d3ed2dfaeff5f",
         "name": "Historie löschen",
         "func": "// Lösche die Historie und den letzten gespeicherten Tag\nflow.set('socHistory', []);\nflow.set('lastSavedDate', '');\nreturn msg;",
         "outputs": 1,
@@ -455,19 +455,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 960,
+        "x": 440,
+        "y": 980,
         "wires": [
             [
-                "92375352a213383b"
+                "e91c14b0fdc4c42b"
             ]
         ]
     },
     {
-        "id": "92375352a213383b",
+        "id": "e91c14b0fdc4c42b",
         "type": "debug",
-        "z": "82a7c230100c480c",
-        "g": "bb717f70d54ecd40",
+        "z": "0b5031412cee0eaa",
+        "g": "ea5d3ed2dfaeff5f",
         "name": "Debug Historie zurücksetzen",
         "active": true,
         "tosidebar": true,
@@ -476,15 +476,15 @@
         "complete": "true",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
-        "y": 960,
+        "x": 760,
+        "y": 980,
         "wires": []
     },
     {
-        "id": "80ed08259585039e",
+        "id": "038a8808f0eca702",
         "type": "inject",
-        "z": "82a7c230100c480c",
-        "g": "bb717f70d54ecd40",
+        "z": "0b5031412cee0eaa",
+        "g": "ea5d3ed2dfaeff5f",
         "name": "Historie anzeigen",
         "props": [],
         "repeat": "",
@@ -494,19 +494,19 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 160,
-        "y": 1000,
+        "x": 200,
+        "y": 1020,
         "wires": [
             [
-                "a5f402dbc56a9327"
+                "70f454c0c1f23ea2"
             ]
         ]
     },
     {
-        "id": "a5f402dbc56a9327",
+        "id": "70f454c0c1f23ea2",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "bb717f70d54ecd40",
+        "z": "0b5031412cee0eaa",
+        "g": "ea5d3ed2dfaeff5f",
         "name": "Lese SOC Historie",
         "func": "// Hole die SOC Historie aus dem Flow Context\nlet socHistory = flow.get('socHistory') || [];\n\n// Gebe die Historie aus\nmsg.payload = socHistory;\nreturn msg;",
         "outputs": 1,
@@ -515,19 +515,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
-        "y": 1000,
+        "x": 450,
+        "y": 1020,
         "wires": [
             [
-                "4331cd94a8f163a7"
+                "cf2de3a3e855c5e9"
             ]
         ]
     },
     {
-        "id": "4331cd94a8f163a7",
+        "id": "cf2de3a3e855c5e9",
         "type": "debug",
-        "z": "82a7c230100c480c",
-        "g": "bb717f70d54ecd40",
+        "z": "0b5031412cee0eaa",
+        "g": "ea5d3ed2dfaeff5f",
         "name": "SOC Historie",
         "active": true,
         "tosidebar": true,
@@ -536,15 +536,15 @@
         "complete": "payload",
         "statusVal": "",
         "statusType": "auto",
-        "x": 670,
-        "y": 1000,
+        "x": 710,
+        "y": 1020,
         "wires": []
     },
     {
-        "id": "ef194cdc9fc8f858",
+        "id": "6789e3233bbcea18",
         "type": "inject",
-        "z": "82a7c230100c480c",
-        "g": "bb717f70d54ecd40",
+        "z": "0b5031412cee0eaa",
+        "g": "ea5d3ed2dfaeff5f",
         "name": "Update SOC History",
         "repeat": "",
         "crontab": "",
@@ -553,38 +553,38 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 170,
-        "y": 1040,
+        "x": 210,
+        "y": 1060,
         "wires": [
             [
-                "5752efb5d1b401ad"
+                "22647fd2d942b0ce"
             ]
         ]
     },
     {
-        "id": "5752efb5d1b401ad",
+        "id": "22647fd2d942b0ce",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "bb717f70d54ecd40",
+        "z": "0b5031412cee0eaa",
+        "g": "ea5d3ed2dfaeff5f",
         "name": "Set SOC History to 100",
         "func": "// Hole das heutige Datum und die Zeit\nlet today = new Date();\nlet threeDaysAgo = new Date(today);\nthreeDaysAgo.setDate(today.getDate() - 3);\n\n// Historie abrufen\nlet socHistory = flow.get('socHistory') || [];\n\n// Setze den SOC für die letzten drei Tage auf 100%\nfor (let i = 0; i < 3; i++) {\n    let dateToSet = new Date(threeDaysAgo);\n    dateToSet.setDate(threeDaysAgo.getDate() + i);\n    \n    // Überprüfen, ob der Eintrag für dieses Datum bereits existiert\n    let existingEntryIndex = socHistory.findIndex(entry => \n        new Date(entry.time).toISOString().split('T')[0] === dateToSet.toISOString().split('T')[0]);\n    \n    if (existingEntryIndex !== -1) {\n        // Wenn der Eintrag bereits existiert, aktualisiere den Wert\n        socHistory[existingEntryIndex].value = 100;\n    } else {\n        // Ansonsten neuen Eintrag hinzufügen\n        socHistory.push({\n            time: dateToSet.toISOString(),\n            value: 100\n        });\n    }\n}\n\n// Begrenze die Historie auf die letzten 30 Einträge\nif (socHistory.length > 30) {\n    socHistory.shift(); // Entferne den ältesten Eintrag\n}\n\n// Speichere die aktualisierte Historie im Flow Context\nflow.set('socHistory', socHistory);\n\n// Gebe die Nachricht weiter\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 430,
-        "y": 1040,
+        "x": 470,
+        "y": 1060,
         "wires": [
             [
-                "dbce8608dbc63624"
+                "c546c64bc65e0de5"
             ]
         ]
     },
     {
-        "id": "dbce8608dbc63624",
+        "id": "c546c64bc65e0de5",
         "type": "debug",
-        "z": "82a7c230100c480c",
-        "g": "bb717f70d54ecd40",
+        "z": "0b5031412cee0eaa",
+        "g": "ea5d3ed2dfaeff5f",
         "name": "Debug SOC History",
         "active": true,
         "tosidebar": true,
@@ -593,217 +593,217 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 690,
-        "y": 1040,
+        "x": 730,
+        "y": 1060,
         "wires": []
     },
     {
-        "id": "7e0d41534c8d4020",
+        "id": "4f70ced48063a3f8",
         "type": "comment",
-        "z": "82a7c230100c480c",
-        "g": "bb717f70d54ecd40",
+        "z": "0b5031412cee0eaa",
+        "g": "ea5d3ed2dfaeff5f",
         "name": "Manuelle Flows zum regeln der History nach reset ",
         "info": "",
-        "x": 270,
-        "y": 920,
+        "x": 310,
+        "y": 940,
         "wires": []
     },
     {
-        "id": "e76356fa43f96bf2",
+        "id": "2d7977f51f18d783",
         "type": "ioBroker get",
-        "z": "82a7c230100c480c",
-        "g": "a1e774ae61e09aed",
+        "z": "0b5031412cee0eaa",
+        "g": "952c070dee6d7e09",
         "name": "batteryLevel",
         "topic": "",
         "attrname": "payload",
         "payloadType": "value",
         "errOnInvalidState": "nothing",
-        "x": 130,
-        "y": 280,
+        "x": 170,
+        "y": 300,
         "wires": [
             [
-                "3342fac26600753b"
+                "9a3c1085d6f1abcf"
             ]
         ]
     },
     {
-        "id": "830ec7735ce6e86c",
+        "id": "91e232fc7f53776f",
         "type": "ioBroker get",
-        "z": "82a7c230100c480c",
-        "g": "a1e774ae61e09aed",
+        "z": "0b5031412cee0eaa",
+        "g": "952c070dee6d7e09",
         "name": "sunsetTimestamp",
-        "topic": "shuttercontrol.0.info.Sunset",
+        "topic": "",
         "attrname": "payload",
         "payloadType": "value",
         "errOnInvalidState": "nothing",
-        "x": 150,
-        "y": 400,
+        "x": 190,
+        "y": 420,
         "wires": [
             [
-                "b7bea307ca23db82"
+                "ba93f4adbcb2016e"
             ]
         ]
     },
     {
-        "id": "cabbab426bbc1039",
+        "id": "a79f94a9b6bce769",
         "type": "comment",
-        "z": "82a7c230100c480c",
-        "g": "a1e774ae61e09aed",
+        "z": "0b5031412cee0eaa",
+        "g": "952c070dee6d7e09",
         "name": "Werte auslesen",
         "info": "",
-        "x": 140,
-        "y": 240,
+        "x": 180,
+        "y": 260,
         "wires": []
     },
     {
-        "id": "07b26fea82327d92",
+        "id": "285f0edd66d65d84",
         "type": "ioBroker get",
-        "z": "82a7c230100c480c",
-        "g": "a1e774ae61e09aed",
+        "z": "0b5031412cee0eaa",
+        "g": "952c070dee6d7e09",
         "name": "sunriseTimestamp",
-        "topic": "shuttercontrol.0.info.Sunrise",
+        "topic": "",
         "attrname": "payload",
         "payloadType": "value",
         "errOnInvalidState": "nothing",
-        "x": 150,
-        "y": 460,
+        "x": 190,
+        "y": 480,
         "wires": [
             [
-                "0d5a9a2af8ecd53d"
+                "dc073d8c35a14a0c"
             ]
         ]
     },
     {
-        "id": "9341238566bf3afd",
+        "id": "4537d937228bb6b4",
         "type": "ioBroker get",
-        "z": "82a7c230100c480c",
-        "g": "a1e774ae61e09aed",
+        "z": "0b5031412cee0eaa",
+        "g": "952c070dee6d7e09",
         "name": "Aktuelle Leistung BKW",
         "topic": "",
         "attrname": "payload",
         "payloadType": "value",
         "errOnInvalidState": "nothing",
-        "x": 160,
-        "y": 520,
+        "x": 200,
+        "y": 540,
         "wires": [
             [
-                "20995947f9d5048a"
+                "cde5e695570a417d"
             ]
         ]
     },
     {
-        "id": "c411289990e1194d",
+        "id": "85bcbcdacefe0d77",
         "type": "ioBroker get",
-        "z": "82a7c230100c480c",
-        "g": "a1e774ae61e09aed",
+        "z": "0b5031412cee0eaa",
+        "g": "952c070dee6d7e09",
         "name": "Zustand AC Modus",
         "topic": "",
         "attrname": "payload",
         "payloadType": "value",
         "errOnInvalidState": "nothing",
-        "x": 150,
-        "y": 580,
+        "x": 190,
+        "y": 600,
         "wires": [
             [
-                "497b212caf60d722"
+                "6ee393f0551e96c2"
             ]
         ]
     },
     {
-        "id": "e76e358bd2f56a8a",
+        "id": "c4630437cc20c1a1",
         "type": "ioBroker get",
-        "z": "82a7c230100c480c",
-        "g": "a1e774ae61e09aed",
+        "z": "0b5031412cee0eaa",
+        "g": "952c070dee6d7e09",
         "name": "Aktuelle AC Leistung",
         "topic": "",
         "attrname": "payload",
         "payloadType": "value",
         "errOnInvalidState": "nothing",
-        "x": 160,
-        "y": 640,
+        "x": 200,
+        "y": 660,
         "wires": [
             [
-                "0f460be04280ac46"
+                "90886270870a5280"
             ]
         ]
     },
     {
-        "id": "b3dad2cbc313bd63",
+        "id": "6df7e6c692545c10",
         "type": "ioBroker get",
-        "z": "82a7c230100c480c",
-        "g": "a1e774ae61e09aed",
+        "z": "0b5031412cee0eaa",
+        "g": "952c070dee6d7e09",
         "name": "Aktuelle Leistung",
         "topic": "",
         "attrname": "payload",
         "payloadType": "value",
         "errOnInvalidState": "nothing",
-        "x": 150,
-        "y": 340,
+        "x": 190,
+        "y": 360,
         "wires": [
             [
-                "294f78ab00f86c52"
+                "6fba4427a63c48d3"
             ]
         ]
     },
     {
-        "id": "ffd1de7cb462eead",
+        "id": "44fc944b03010d4c",
         "type": "ioBroker get",
-        "z": "82a7c230100c480c",
-        "g": "a1e774ae61e09aed",
+        "z": "0b5031412cee0eaa",
+        "g": "952c070dee6d7e09",
         "name": "SOC #1",
         "topic": "",
         "attrname": "payload",
         "payloadType": "value",
         "errOnInvalidState": "nothing",
-        "x": 120,
-        "y": 700,
+        "x": 160,
+        "y": 720,
         "wires": [
             [
-                "7a98b4bc9054a3d2"
+                "34005b614e400601"
             ]
         ]
     },
     {
-        "id": "778378a1cb8a2baa",
+        "id": "d34eaf17468659dd",
         "type": "ioBroker get",
-        "z": "82a7c230100c480c",
-        "g": "a1e774ae61e09aed",
+        "z": "0b5031412cee0eaa",
+        "g": "952c070dee6d7e09",
         "name": "SOC #2",
         "topic": "",
         "attrname": "payload",
         "payloadType": "value",
         "errOnInvalidState": "nothing",
-        "x": 120,
-        "y": 760,
+        "x": 160,
+        "y": 780,
         "wires": [
             [
-                "fcb0ded8394f1246"
+                "9276e4037c5ea13f"
             ]
         ]
     },
     {
-        "id": "b0b39be70cd0944e",
+        "id": "8eb264856d7995c9",
         "type": "ioBroker get",
-        "z": "82a7c230100c480c",
-        "g": "a1e774ae61e09aed",
+        "z": "0b5031412cee0eaa",
+        "g": "952c070dee6d7e09",
         "name": "SOC #3",
         "topic": "",
         "attrname": "payload",
         "payloadType": "value",
         "errOnInvalidState": "nothing",
-        "x": 120,
-        "y": 820,
+        "x": 160,
+        "y": 840,
         "wires": [
             [
-                "e98f695f6c81ec06"
+                "48befa020ea4fba5"
             ]
         ]
     },
     {
-        "id": "3342fac26600753b",
+        "id": "9a3c1085d6f1abcf",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "5826a0a7cba6fa0d",
+        "z": "0b5031412cee0eaa",
+        "g": "cd0e93157c38cdb0",
         "name": "Message",
         "func": "msg.topic = \"batteryLevel\"\n\nreturn msg;",
         "outputs": 1,
@@ -812,20 +812,20 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 280,
+        "x": 440,
+        "y": 300,
         "wires": [
             [
-                "6e9cd2b3d7f289dd",
-                "bf66065474e2d158"
+                "813bcbcb4dd208bd",
+                "91f151656e6c4000"
             ]
         ]
     },
     {
-        "id": "294f78ab00f86c52",
+        "id": "6fba4427a63c48d3",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "5826a0a7cba6fa0d",
+        "z": "0b5031412cee0eaa",
+        "g": "cd0e93157c38cdb0",
         "name": "Message",
         "func": "msg.topic = \"currentPower\"\n\nreturn msg;",
         "outputs": 1,
@@ -834,19 +834,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 340,
+        "x": 440,
+        "y": 360,
         "wires": [
             [
-                "bf66065474e2d158"
+                "91f151656e6c4000"
             ]
         ]
     },
     {
-        "id": "b7bea307ca23db82",
+        "id": "ba93f4adbcb2016e",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "5826a0a7cba6fa0d",
+        "z": "0b5031412cee0eaa",
+        "g": "cd0e93157c38cdb0",
         "name": "Message",
         "func": "msg.topic = \"sunsetTimestamp\"\n\nreturn msg;",
         "outputs": 1,
@@ -855,20 +855,20 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 400,
+        "x": 440,
+        "y": 420,
         "wires": [
             [
-                "6e9cd2b3d7f289dd",
-                "bf66065474e2d158"
+                "813bcbcb4dd208bd",
+                "91f151656e6c4000"
             ]
         ]
     },
     {
-        "id": "0d5a9a2af8ecd53d",
+        "id": "dc073d8c35a14a0c",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "5826a0a7cba6fa0d",
+        "z": "0b5031412cee0eaa",
+        "g": "cd0e93157c38cdb0",
         "name": "Message",
         "func": "msg.topic = \"sunriseTimestamp\"\n\nreturn msg;",
         "outputs": 1,
@@ -877,30 +877,30 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 460,
+        "x": 440,
+        "y": 480,
         "wires": [
             [
-                "bf66065474e2d158"
+                "91f151656e6c4000"
             ]
         ]
     },
     {
-        "id": "6fd6ba69abea955f",
+        "id": "4d2e658f1b2a9e71",
         "type": "comment",
-        "z": "82a7c230100c480c",
-        "g": "5826a0a7cba6fa0d",
+        "z": "0b5031412cee0eaa",
+        "g": "cd0e93157c38cdb0",
         "name": "Topic an msg ",
         "info": "",
-        "x": 410,
-        "y": 240,
+        "x": 450,
+        "y": 260,
         "wires": []
     },
     {
-        "id": "20995947f9d5048a",
+        "id": "cde5e695570a417d",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "5826a0a7cba6fa0d",
+        "z": "0b5031412cee0eaa",
+        "g": "cd0e93157c38cdb0",
         "name": "Message",
         "func": "msg.topic = \"PV_Power\"\n\nreturn msg;",
         "outputs": 1,
@@ -909,19 +909,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 520,
+        "x": 440,
+        "y": 540,
         "wires": [
             [
-                "bf66065474e2d158"
+                "91f151656e6c4000"
             ]
         ]
     },
     {
-        "id": "497b212caf60d722",
+        "id": "6ee393f0551e96c2",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "5826a0a7cba6fa0d",
+        "z": "0b5031412cee0eaa",
+        "g": "cd0e93157c38cdb0",
         "name": "Message",
         "func": "msg.topic = \"switchState\"\n\nreturn msg;",
         "outputs": 1,
@@ -930,19 +930,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 580,
+        "x": 440,
+        "y": 600,
         "wires": [
             [
-                "bf66065474e2d158"
+                "91f151656e6c4000"
             ]
         ]
     },
     {
-        "id": "0f460be04280ac46",
+        "id": "90886270870a5280",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "5826a0a7cba6fa0d",
+        "z": "0b5031412cee0eaa",
+        "g": "cd0e93157c38cdb0",
         "name": "Message",
         "func": "msg.topic = \"AC_Power\"\n\nreturn msg;",
         "outputs": 1,
@@ -951,19 +951,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 640,
+        "x": 440,
+        "y": 660,
         "wires": [
             [
-                "bf66065474e2d158"
+                "91f151656e6c4000"
             ]
         ]
     },
     {
-        "id": "7a98b4bc9054a3d2",
+        "id": "34005b614e400601",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "5826a0a7cba6fa0d",
+        "z": "0b5031412cee0eaa",
+        "g": "cd0e93157c38cdb0",
         "name": "Message",
         "func": "msg.topic = \"SOC_1\"\n\nreturn msg;",
         "outputs": 1,
@@ -972,19 +972,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 700,
+        "x": 440,
+        "y": 720,
         "wires": [
             [
-                "bf66065474e2d158"
+                "91f151656e6c4000"
             ]
         ]
     },
     {
-        "id": "fcb0ded8394f1246",
+        "id": "9276e4037c5ea13f",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "5826a0a7cba6fa0d",
+        "z": "0b5031412cee0eaa",
+        "g": "cd0e93157c38cdb0",
         "name": "Message",
         "func": "msg.topic = \"SOC_2\"\n\nreturn msg;",
         "outputs": 1,
@@ -993,19 +993,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 760,
+        "x": 440,
+        "y": 780,
         "wires": [
             [
-                "bf66065474e2d158"
+                "91f151656e6c4000"
             ]
         ]
     },
     {
-        "id": "e98f695f6c81ec06",
+        "id": "48befa020ea4fba5",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "5826a0a7cba6fa0d",
+        "z": "0b5031412cee0eaa",
+        "g": "cd0e93157c38cdb0",
         "name": "Message",
         "func": "msg.topic = \"SOC_3\"\n\nreturn msg;",
         "outputs": 1,
@@ -1014,19 +1014,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 820,
+        "x": 440,
+        "y": 840,
         "wires": [
             [
-                "bf66065474e2d158"
+                "91f151656e6c4000"
             ]
         ]
     },
     {
-        "id": "bf66065474e2d158",
+        "id": "91f151656e6c4000",
         "type": "join",
-        "z": "82a7c230100c480c",
-        "g": "88492b6ac31fb141",
+        "z": "0b5031412cee0eaa",
+        "g": "47551ece5ab888ba",
         "name": "",
         "mode": "custom",
         "build": "object",
@@ -1043,33 +1043,33 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 690,
-        "y": 360,
+        "x": 730,
+        "y": 380,
         "wires": [
             [
-                "c1ce415fbfa73790",
-                "36df9d2b9351dbe2",
-                "239e9f3a54b4c5fb",
-                "90c4fdd0ebf700d1"
+                "7cdda5d82e152878",
+                "8ffff8cc4a417b7f",
+                "119fa4bc336da87c",
+                "062f4b53b12d6efa"
             ]
         ]
     },
     {
-        "id": "6337cc9a2e8656d3",
+        "id": "8ba70a97251133e5",
         "type": "comment",
-        "z": "82a7c230100c480c",
-        "g": "88492b6ac31fb141",
+        "z": "0b5031412cee0eaa",
+        "g": "47551ece5ab888ba",
         "name": "Zusammenfassen der msg",
         "info": "",
-        "x": 690,
-        "y": 320,
+        "x": 730,
+        "y": 340,
         "wires": []
     },
     {
-        "id": "432c223f9d2ce1d1",
+        "id": "e3dde5259246a9e3",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "318602c5deee36c8",
+        "z": "0b5031412cee0eaa",
+        "g": "a0192ee5aabebdd5",
         "name": "Variablen setzen ",
         "func": "// Setze Konstanten im Flow (Ersetze die Werte mit deinen gewünschten Werten)\nflow.set('LOW_BATTERY_THRESHOLD', 20);  // Schwellenwert für niedrigen Akku\nflow.set('FULL_CHARGE_THRESHOLD', 100);  // Schwellenwert für volle Ladung\nflow.set('NO_CHARGE_DAYS', 3);  // Anzahl der Tage ohne volle Ladung\nflow.set('MIN_OUTPUT_POWER', 30);  // Mindestleistung in Watt\nflow.set('MEDIUM_OUTPUT_POWER', 60);  // Mittlere Leistung in Watt\nflow.set('HIGH_OUTPUT_POWER', 90);  // Hohe Leistung in Watt\nflow.set('OUTPUT_POWER_THRESHOLD', 100);  // Schwelle für Leistung\nflow.set('MAX_OUTPUT_POWER', 800);  // Maximale Leistung\nflow.set('OUTPUT_POWER_STEP', 1);  // Schrittgröße\nflow.set('HYSTERESIS', 50);  // Hysterese in Watt\n\nflow.set('MIN_EINSPEISUNG', -150);  // Mindesteinspeisung in Watt\nflow.set('START_AC_LEISTUNG', 100);  // Startwert für AC-Ladung\nflow.set('MAX_AC_LEISTUNG', 900);  // Maximale AC-Leistung\nflow.set('MAX_GESAMTLEISTUNG', 1100);  // Maximale Gesamtleistung\nflow.set('LEISTUNGSSCHRITT', 100);  // Schrittweite für Leistung\nflow.set('ENT_PRELLZEIT', 60000);  // Entprellzeit (in Millisekunden)\nflow.set('SKALIERUNG', 1);  // Skalierung der Einspeisung\nflow.set('BATTERY_FULL_THRESHOLD', 100);  // Schwellenwert für vollen Akku\nflow.set('STEIGERUNGSSCHRITT', 100);  // Steigerung der Ladeleistung\nflow.set('ZIEL_NEGATIVE_LEISTUNG', -100);  // Zielwert für negative Einspeisung\n\n// Setze Fallback-Werte für 'lastSetPower' und 'socHistory', wenn diese nicht existieren\nflow.set('lastSetPower', flow.get('lastSetPower') || 0);  // Fallback auf 0, wenn nicht gesetzt\nflow.set('socHistory', flow.get('socHistory') || []);  // Fallback auf leeres Array, wenn nicht gesetzt\n\n// Rückgabe des ursprünglichen Messages, nachdem alle Variablen gesetzt wurden\nreturn msg;\n",
         "outputs": 0,
@@ -1078,15 +1078,15 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 700,
-        "y": 100,
+        "x": 720,
+        "y": 120,
         "wires": []
     },
     {
-        "id": "30fd2ac3a59752c6",
+        "id": "073fb58071e2f0be",
         "type": "inject",
-        "z": "82a7c230100c480c",
-        "g": "318602c5deee36c8",
+        "z": "0b5031412cee0eaa",
+        "g": "a0192ee5aabebdd5",
         "name": "Bei neustart oder manuell",
         "props": [
             {
@@ -1104,30 +1104,30 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 470,
-        "y": 100,
+        "x": 510,
+        "y": 120,
         "wires": [
             [
-                "432c223f9d2ce1d1"
+                "e3dde5259246a9e3"
             ]
         ]
     },
     {
-        "id": "1efd94ab5a30e375",
+        "id": "9ffcbeeb1210cc0e",
         "type": "comment",
-        "z": "82a7c230100c480c",
-        "g": "318602c5deee36c8",
+        "z": "0b5031412cee0eaa",
+        "g": "a0192ee5aabebdd5",
         "name": "Flow variablen und Schwellenwerte setzen",
         "info": "",
-        "x": 520,
-        "y": 60,
+        "x": 560,
+        "y": 80,
         "wires": []
     },
     {
-        "id": "1783e42f3c451664",
+        "id": "8b7b5cec2f56e54d",
         "type": "inject",
-        "z": "82a7c230100c480c",
-        "g": "318602c5deee36c8",
+        "z": "0b5031412cee0eaa",
+        "g": "a0192ee5aabebdd5",
         "name": "",
         "props": [
             {
@@ -1145,19 +1145,19 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 420,
-        "y": 140,
+        "x": 460,
+        "y": 160,
         "wires": [
             [
-                "a807df740950921f"
+                "797997ca351092b4"
             ]
         ]
     },
     {
-        "id": "a807df740950921f",
+        "id": "797997ca351092b4",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "318602c5deee36c8",
+        "z": "0b5031412cee0eaa",
+        "g": "a0192ee5aabebdd5",
         "name": "Flow variablen lesen",
         "func": "// Hole die Konstanten aus dem Flow\nconst lowBatteryThreshold = flow.get('LOW_BATTERY_THRESHOLD');\nconst fullChargeThreshold = flow.get('FULL_CHARGE_THRESHOLD');\nconst noChargeDays = flow.get('NO_CHARGE_DAYS');\nconst minOutputPower = flow.get('MIN_OUTPUT_POWER');\nconst mediumOutputPower = flow.get('MEDIUM_OUTPUT_POWER');\nconst highOutputPower = flow.get('HIGH_OUTPUT_POWER');\nconst outputPowerThreshold = flow.get('OUTPUT_POWER_THRESHOLD');\nconst maxOutputPower = flow.get('MAX_OUTPUT_POWER');\nconst outputPowerStep = flow.get('OUTPUT_POWER_STEP');\nconst hysteresis = flow.get('HYSTERESIS');\nconst minEinspeisung = flow.get('MIN_EINSPEISUNG');\nconst startACLeistung = flow.get('START_AC_LEISTUNG');\nconst maxACLeistung = flow.get('MAX_AC_LEISTUNG');\nconst maxGesamtLeistung = flow.get('MAX_GESAMTLEISTUNG');\nconst leistungsschritt = flow.get('LEISTUNGSSCHRITT');\nconst entPrellzeit = flow.get('ENT_PRELLZEIT');\nconst skalierung = flow.get('SKALIERUNG');\nconst batteryFullThreshold = flow.get('BATTERY_FULL_THRESHOLD');\nconst steigerschritt = flow.get('STEIGERUNGSSCHRITT');\nconst zielNegativeLeistung = flow.get('ZIEL_NEGATIVE_LEISTUNG');\n\n// Sende alle Variablen an die Debug-Node\nmsg.payload = {\n    LOW_BATTERY_THRESHOLD: lowBatteryThreshold,\n    FULL_CHARGE_THRESHOLD: fullChargeThreshold,\n    NO_CHARGE_DAYS: noChargeDays,\n    MIN_OUTPUT_POWER: minOutputPower,\n    MEDIUM_OUTPUT_POWER: mediumOutputPower,\n    HIGH_OUTPUT_POWER: highOutputPower,\n    OUTPUT_POWER_THRESHOLD: outputPowerThreshold,\n    MAX_OUTPUT_POWER: maxOutputPower,\n    OUTPUT_POWER_STEP: outputPowerStep,\n    HYSTERESIS: hysteresis,\n    MIN_EINSPEISUNG: minEinspeisung,\n    START_AC_LEISTUNG: startACLeistung,\n    MAX_AC_LEISTUNG: maxACLeistung,\n    MAX_GESAMTLEISTUNG: maxGesamtLeistung,\n    LEISTUNGSSCHRITT: leistungsschritt,\n    ENT_PRELLZEIT: entPrellzeit,\n    SKALIERUNG: skalierung,\n    BATTERY_FULL_THRESHOLD: batteryFullThreshold,\n    STEIGERUNGSSCHRITT: steigerschritt,\n    ZIEL_NEGATIVE_LEISTUNG: zielNegativeLeistung\n};\n\nreturn msg;\n",
         "outputs": 1,
@@ -1166,19 +1166,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 600,
-        "y": 140,
+        "x": 640,
+        "y": 160,
         "wires": [
             [
-                "ee0f70efbb814721"
+                "d26bdf9d310613f7"
             ]
         ]
     },
     {
-        "id": "ee0f70efbb814721",
+        "id": "d26bdf9d310613f7",
         "type": "debug",
-        "z": "82a7c230100c480c",
-        "g": "318602c5deee36c8",
+        "z": "0b5031412cee0eaa",
+        "g": "a0192ee5aabebdd5",
         "name": "debug 4",
         "active": true,
         "tosidebar": true,
@@ -1187,26 +1187,26 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 780,
-        "y": 140,
+        "x": 820,
+        "y": 160,
         "wires": []
     },
     {
-        "id": "86bf0899a61d5496",
+        "id": "5f1452465939b36f",
         "type": "comment",
-        "z": "82a7c230100c480c",
-        "g": "c0bbe3731606ef3e",
+        "z": "0b5031412cee0eaa",
+        "g": "085b9ba3f7ac15a3",
         "name": "Notlademodus",
         "info": "",
-        "x": 650,
-        "y": 540,
+        "x": 690,
+        "y": 560,
         "wires": []
     },
     {
-        "id": "b1f03947cfb5c475",
+        "id": "c3ca2522076579f4",
         "type": "change",
-        "z": "82a7c230100c480c",
-        "g": "c0bbe3731606ef3e",
+        "z": "0b5031412cee0eaa",
+        "g": "085b9ba3f7ac15a3",
         "name": "Ladeleistung Notmodus",
         "rules": [
             {
@@ -1214,7 +1214,7 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "900",
-                "tot": "str"
+                "tot": "num"
             }
         ],
         "action": "",
@@ -1222,19 +1222,19 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 950,
-        "y": 620,
+        "x": 990,
+        "y": 640,
         "wires": [
             [
-                "0d11e333e693c1ca"
+                "792b68fb82c4abc3"
             ]
         ]
     },
     {
-        "id": "1d5fc5c1abf89f1c",
+        "id": "9171e9c12c6c0e81",
         "type": "change",
-        "z": "82a7c230100c480c",
-        "g": "c0bbe3731606ef3e",
+        "z": "0b5031412cee0eaa",
+        "g": "085b9ba3f7ac15a3",
         "name": "Schalter auf 1 Notmodus",
         "rules": [
             {
@@ -1242,7 +1242,7 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "1",
-                "tot": "str"
+                "tot": "num"
             }
         ],
         "action": "",
@@ -1250,19 +1250,19 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 950,
-        "y": 660,
+        "x": 990,
+        "y": 680,
         "wires": [
             [
-                "cb13b1452ec8ba6e"
+                "7588e75a62f84615"
             ]
         ]
     },
     {
-        "id": "cb13b1452ec8ba6e",
+        "id": "7588e75a62f84615",
         "type": "ioBroker out",
-        "z": "82a7c230100c480c",
-        "g": "c0bbe3731606ef3e",
+        "z": "0b5031412cee0eaa",
+        "g": "085b9ba3f7ac15a3",
         "name": "AC Modus wechseln",
         "topic": "",
         "ack": "false",
@@ -1274,15 +1274,15 @@
         "stateUnit": "",
         "stateMin": "",
         "stateMax": "",
-        "x": 1420,
-        "y": 640,
+        "x": 1460,
+        "y": 660,
         "wires": []
     },
     {
-        "id": "0d11e333e693c1ca",
+        "id": "792b68fb82c4abc3",
         "type": "ioBroker out",
-        "z": "82a7c230100c480c",
-        "g": "c0bbe3731606ef3e",
+        "z": "0b5031412cee0eaa",
+        "g": "085b9ba3f7ac15a3",
         "name": "ACE1500 Ladeleistung",
         "topic": "",
         "ack": "false",
@@ -1294,15 +1294,15 @@
         "stateUnit": "",
         "stateMin": "",
         "stateMax": "",
-        "x": 1420,
-        "y": 560,
+        "x": 1460,
+        "y": 580,
         "wires": []
     },
     {
-        "id": "09c54dbd4b888b46",
+        "id": "4f5ece56d5a2c5b4",
         "type": "switch",
-        "z": "82a7c230100c480c",
-        "g": "c0bbe3731606ef3e",
+        "z": "0b5031412cee0eaa",
+        "g": "085b9ba3f7ac15a3",
         "name": "Notlademodus",
         "property": "payload.minSOC",
         "propertyType": "msg",
@@ -1321,24 +1321,24 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 660,
-        "y": 680,
+        "x": 700,
+        "y": 700,
         "wires": [
             [
-                "3ecfa20203d6c366"
+                "d4bcda088938f0de"
             ],
             [
-                "1d5fc5c1abf89f1c",
-                "a6ac5a1f977118db",
-                "b1f03947cfb5c475"
+                "9171e9c12c6c0e81",
+                "bcc4541dc7a8308c",
+                "c3ca2522076579f4"
             ]
         ]
     },
     {
-        "id": "90c4fdd0ebf700d1",
+        "id": "062f4b53b12d6efa",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "c0bbe3731606ef3e",
+        "z": "0b5031412cee0eaa",
+        "g": "085b9ba3f7ac15a3",
         "name": "minSOC berechnen",
         "func": "// Extrahiere die SOC-Werte aus msg.payload\nlet soc1 = msg.payload.SOC_1;\nlet soc2 = msg.payload.SOC_2;\nlet soc3 = msg.payload.SOC_3;\n\n// Den kleinsten Wert ermitteln\nlet minSOC = Math.min(soc1, soc2, soc3);\n\n// Sicherstellen, dass msg.minSOC hinzugefügt wird\nmsg.payload.minSOC = minSOC;\n\n// Nachricht zurückgeben\nreturn msg;\n",
         "outputs": 1,
@@ -1347,19 +1347,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
-        "y": 620,
+        "x": 710,
+        "y": 640,
         "wires": [
             [
-                "09c54dbd4b888b46"
+                "4f5ece56d5a2c5b4"
             ]
         ]
     },
     {
-        "id": "3ecfa20203d6c366",
+        "id": "d4bcda088938f0de",
         "type": "change",
-        "z": "82a7c230100c480c",
-        "g": "c0bbe3731606ef3e",
+        "z": "0b5031412cee0eaa",
+        "g": "085b9ba3f7ac15a3",
         "name": "Normalbetrieb",
         "rules": [
             {
@@ -1382,20 +1382,20 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 920,
-        "y": 540,
+        "x": 960,
+        "y": 560,
         "wires": [
             [
-                "325d0f0bcc63a68c",
-                "09c0416acfd5b4d3"
+                "ba6e48b443ac6e7c",
+                "5935455b3647b5e0"
             ]
         ]
     },
     {
-        "id": "a6ac5a1f977118db",
+        "id": "bcc4541dc7a8308c",
         "type": "change",
-        "z": "82a7c230100c480c",
-        "g": "c0bbe3731606ef3e",
+        "z": "0b5031412cee0eaa",
+        "g": "085b9ba3f7ac15a3",
         "name": "Block Normalbetrieb",
         "rules": [
             {
@@ -1418,20 +1418,20 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 940,
-        "y": 580,
+        "x": 980,
+        "y": 600,
         "wires": [
             [
-                "325d0f0bcc63a68c",
-                "09c0416acfd5b4d3"
+                "ba6e48b443ac6e7c",
+                "5935455b3647b5e0"
             ]
         ]
     },
     {
-        "id": "325d0f0bcc63a68c",
+        "id": "ba6e48b443ac6e7c",
         "type": "join",
-        "z": "82a7c230100c480c",
-        "g": "c0bbe3731606ef3e",
+        "z": "0b5031412cee0eaa",
+        "g": "085b9ba3f7ac15a3",
         "name": "",
         "mode": "custom",
         "build": "array",
@@ -1448,21 +1448,21 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 1170,
-        "y": 560,
+        "x": 1210,
+        "y": 580,
         "wires": [
             [
-                "2d6bb5567de4de9e",
-                "8850d6e798ba1ec9",
-                "9546f288421561f6"
+                "71e5e584f0dc108c",
+                "33b40993f6e729ff",
+                "dd601dbd1211311e"
             ]
         ]
     },
     {
-        "id": "09c0416acfd5b4d3",
+        "id": "5935455b3647b5e0",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "c0bbe3731606ef3e",
+        "z": "0b5031412cee0eaa",
+        "g": "085b9ba3f7ac15a3",
         "name": "Gate open? (Normalbetrieb)",
         "func": "// Prüfe, ob es schon eine Flagge für den Status \"open\" gibt\nif (global.get('gate_open') !== true && msg.payload === \"open\") {\n    // Setze die Ladeleistung auf 0\n    msg.payload = 0;\n\n    // Setze die Flagge auf \"true\", um zu verhindern, dass dies erneut passiert\n    global.set('gate_open', true);\n\n    return msg;\n} \n// Wenn der Zustand auf \"close\" wechselt, setze die Flagge zurück\nelse if (msg.payload === \"close\") {\n    global.set('gate_open', false);\n}\n\n// Falls der Zustand noch nicht gewechselt ist oder die Flagge gesetzt ist, nichts tun\nreturn null;\n",
         "outputs": 1,
@@ -1471,31 +1471,31 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 960,
-        "y": 700,
+        "x": 1000,
+        "y": 720,
         "wires": [
             [
-                "0d11e333e693c1ca"
+                "792b68fb82c4abc3"
             ]
         ]
     },
     {
-        "id": "f7391a5075d179c2",
+        "id": "fb755b617c9eb224",
         "type": "comment",
-        "z": "82a7c230100c480c",
-        "g": "21a5666bcfa4c6e5",
+        "z": "0b5031412cee0eaa",
+        "g": "8cf40266f7181764",
         "name": "Übergabe an Zendure HUB1200",
         "info": "",
-        "x": 1690,
-        "y": 260,
+        "x": 1730,
+        "y": 280,
         "wires": []
     },
     {
-        "id": "ad9bd43afe6a048b",
+        "id": "2286095894ab0747",
         "type": "ioBroker out",
-        "z": "82a7c230100c480c",
-        "g": "21a5666bcfa4c6e5",
-        "name": "requiredPower",
+        "z": "0b5031412cee0eaa",
+        "g": "8cf40266f7181764",
+        "name": "Ausgangsleistung HUB",
         "topic": "",
         "ack": "false",
         "autoCreate": "false",
@@ -1506,15 +1506,15 @@
         "stateUnit": "",
         "stateMin": "",
         "stateMax": "",
-        "x": 1640,
-        "y": 300,
+        "x": 1710,
+        "y": 320,
         "wires": []
     },
     {
-        "id": "32e1e314f4162ca7",
+        "id": "97ddc75f5b495e0d",
         "type": "ioBroker out",
-        "z": "82a7c230100c480c",
-        "g": "21a5666bcfa4c6e5",
+        "z": "0b5031412cee0eaa",
+        "g": "8cf40266f7181764",
         "name": "ACE1500 Ladeleistung",
         "topic": "",
         "ack": "false",
@@ -1526,15 +1526,15 @@
         "stateUnit": "",
         "stateMin": "",
         "stateMax": "",
-        "x": 1660,
-        "y": 360,
+        "x": 1700,
+        "y": 380,
         "wires": []
     },
     {
-        "id": "5c8c7f5d4ab41e30",
+        "id": "4dee9c7275107a61",
         "type": "ioBroker out",
-        "z": "82a7c230100c480c",
-        "g": "21a5666bcfa4c6e5",
+        "z": "0b5031412cee0eaa",
+        "g": "8cf40266f7181764",
         "name": "AC Modus wechseln",
         "topic": "",
         "ack": "false",
@@ -1546,26 +1546,26 @@
         "stateUnit": "",
         "stateMin": "",
         "stateMax": "",
-        "x": 1660,
-        "y": 420,
+        "x": 1700,
+        "y": 440,
         "wires": []
     },
     {
-        "id": "99dfbf64804fdac9",
+        "id": "dc708c70e36c6bf5",
         "type": "comment",
-        "z": "82a7c230100c480c",
-        "g": "92cbe6c0ffdd3396",
+        "z": "0b5031412cee0eaa",
+        "g": "c95530c92e33afc8",
         "name": "Benötigte Leistung berechnen",
         "info": "",
-        "x": 1040,
-        "y": 260,
+        "x": 1080,
+        "y": 280,
         "wires": []
     },
     {
-        "id": "239e9f3a54b4c5fb",
+        "id": "119fa4bc336da87c",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "92cbe6c0ffdd3396",
+        "z": "0b5031412cee0eaa",
+        "g": "c95530c92e33afc8",
         "name": "AC-Switch",
         "func": "// Konstanten für die Sonnenaufgangs- und Sonnenuntergangszeiten\nconst sunriseTime = msg.payload.sunriseTimestamp;  // Sonnenaufgangszeit (hh:mm)\nconst sunsetTime = msg.payload.sunsetTimestamp;    // Sonnenuntergangszeit (hh:mm)\n\n// Hilfsfunktion, um Zeit zu vergleichen\nfunction isTimeInRange(currentTime, startTime, endTime) {\n    let current = new Date(\"1970-01-01T\" + currentTime + \":00Z\");\n    let start = new Date(\"1970-01-01T\" + startTime + \":00Z\");\n    let end = new Date(\"1970-01-01T\" + endTime + \":00Z\");\n\n    return current >= start && current <= end;\n}\n\n// Aktuelle Zeit als 'hh:mm'\nlet now = new Date();\nlet currentTimeString = now.toTimeString().slice(0, 5);  // Extrahiere die aktuelle Zeit im Format 'hh:mm'\n\n// Aktueller Schaltzustand des Switches\nlet switchState = msg.payload.switchState;\n\n// Logik zum Sonnenaufgang: Schalter auf 1 setzen und prüfen\nif (isTimeInRange(currentTimeString, sunriseTime, sunsetTime)) {\n    if (switchState !== 1) {\n        // Schalter auf 1 setzen, wenn er falsch steht\n        switchState = 1;\n        msg.payload = 1;  // Nur die Zahl 1 ausgeben\n        node.send(msg);\n    }\n} else {\n    // Logik nach Sonnenuntergang: Schalter auf 2 setzen und prüfen\n    if (switchState !== 2) {\n        // Schalter auf 2 setzen, wenn er falsch steht\n        switchState = 2;\n        msg.payload = 2;  // Nur die Zahl 2 ausgeben\n        node.send(msg);\n    }\n}\n",
         "outputs": 1,
@@ -1574,19 +1574,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
-        "y": 420,
+        "x": 1030,
+        "y": 440,
         "wires": [
             [
-                "9546f288421561f6"
+                "dd601dbd1211311e"
             ]
         ]
     },
     {
-        "id": "c1ce415fbfa73790",
+        "id": "7cdda5d82e152878",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "92cbe6c0ffdd3396",
+        "z": "0b5031412cee0eaa",
+        "g": "c95530c92e33afc8",
         "name": "Berechnung entladen",
         "func": "// Konstante Werte für Schwellenwerte\nconst LOW_BATTERY_THRESHOLD = flow.get('LOW_BATTERY_THRESHOLD') || 20; // Schwellenwert für niedrigen Akku\nconst FULL_CHARGE_THRESHOLD = flow.get('FULL_CHARGE_THRESHOLD') || 100; // Schwellenwert für volle Ladung\nconst NO_CHARGE_DAYS = flow.get('NO_CHARGE_DAYS') || 3; // Anzahl der Tage ohne volle Ladung\nconst MIN_OUTPUT_POWER = flow.get('MIN_OUTPUT_POWER') || 30; // Mindestleistung 30 Watt\nconst MEDIUM_OUTPUT_POWER = flow.get('MEDIUM_OUTPUT_POWER') || 60; // Step auf 60 Watt\nconst HIGH_OUTPUT_POWER = flow.get('HIGH_OUTPUT_POWER') || 90; // Step auf 90 Watt\nconst OUTPUT_POWER_THRESHOLD = flow.get('OUTPUT_POWER_THRESHOLD') || 100; // Step auf 100 Watt\nconst MAX_OUTPUT_POWER = flow.get('MAX_OUTPUT_POWER') || 800; // Maximalleistung\nconst OUTPUT_POWER_STEP = flow.get('OUTPUT_POWER_STEP') || 1; // Schrittgröße über 100 Watt\nconst HYSTERESIS = flow.get('HYSTERESIS') || 50; // Hysterese von 50 Watt\n\nconst batteryLevel = msg.payload.batteryLevel;\nconst sunsetTimeString = msg.payload.sunsetTimestamp;\nconst sunriseTimeString = msg.payload.sunriseTimestamp;\nconst currentPower = msg.payload.currentPower;\nconst socHistory = flow.get('socHistory') || [];\n\n// Debug: Historie anzeigen\n//node.warn(\"SOC History: \" + JSON.stringify(socHistory));\n\nconst today = new Date();\nconst sunsetHours = parseInt(sunsetTimeString.split(':')[0], 10);\nconst sunsetMinutes = parseInt(sunsetTimeString.split(':')[1], 10);\nconst sunriseHours = parseInt(sunriseTimeString.split(':')[0], 10);\nconst sunriseMinutes = parseInt(sunriseTimeString.split(':')[1], 10);\n\nconst sunset = new Date(today.getFullYear(), today.getMonth(), today.getDate(), sunsetHours, sunsetMinutes);\nconst sunrise = new Date(today.getFullYear(), today.getMonth(), today.getDate(), sunriseHours, sunriseMinutes);\nconst sunsetTimestamp = sunset.getTime();\nconst sunriseTimestamp = sunrise.getTime();\nconst currentTime = new Date().getTime();\n\n// Überprüfen, ob der Akku an den letzten drei Tagen weniger als 100% geladen wurde\nconst threeDaysAgo = new Date();\nthreeDaysAgo.setDate(today.getDate() - NO_CHARGE_DAYS);\n\n// Letzte 3 Tage aus der Historie filtern\nconst recentEntries = socHistory.filter(entry => new Date(entry.time).getTime() > threeDaysAgo.getTime());\n\n// Debug: Zeige die gefilterten Einträge der letzten 3 Tage\n//node.warn(\"Filtered entries (last 3 days): \" + JSON.stringify(recentEntries));\n\n// Prüfen, ob in den letzten drei Tagen nicht 100 % erreicht wurde\nconst noFullChargeInThreeDays = recentEntries.every(entry => entry.value < FULL_CHARGE_THRESHOLD);\n\n// Debug: Zeige das Ergebnis der Überprüfung\n//node.warn(\"No full charge in last 3 days: \" + noFullChargeInThreeDays);\n\n// Wenn in den letzten 3 Tagen keine 100% erreicht wurden oder wenn der Akku unter 30% ist\nif (noFullChargeInThreeDays || batteryLevel <= LOW_BATTERY_THRESHOLD) {\n    msg.payload = 0; // Keine Leistung abgeben, nur laden\n    //    node.warn(\"No discharge allowed. Either no full charge in last 3 days or battery level below 30%.\");\n    return msg;\n}\n\n// Hole den zuletzt gesetzten Wert für die Leistung, fallback auf 0\nlet lastSetPower = flow.get('lastSetPower') || 0;\n\n// Debug: Zeige den aktuellen Wert von lastSetPower\n//node.warn(\"Last set power: \" + lastSetPower);\n\n// Normaler Entladungsbetrieb (wenn der Akku in den letzten 3 Tagen 100 % erreicht hat)\nif (currentTime > sunsetTimestamp || currentTime < sunriseTimestamp) {\n    let requiredPower;\n\n    if (currentPower > 0) {\n        // Wenn Strom bezogen wird, addiere den aktuellen Verbrauch zu lastSetPower\n        requiredPower = lastSetPower + currentPower;\n    } else {\n        // Berechne die erforderliche Leistung, um den Bezug auf 0 Watt zu bringen\n        requiredPower = lastSetPower + currentPower;\n    }\n\n    // Anwendung der Hysterese\n    if (requiredPower < lastSetPower - HYSTERESIS) {\n        requiredPower = lastSetPower - HYSTERESIS; // Nach unten anpassen\n    } else if (requiredPower > lastSetPower + HYSTERESIS) {\n        requiredPower = lastSetPower + HYSTERESIS; // Nach oben anpassen\n    }\n\n    // Leisungssprünge anwenden\n    if (requiredPower < MIN_OUTPUT_POWER) {\n        requiredPower = MIN_OUTPUT_POWER;\n    } else if (requiredPower < MEDIUM_OUTPUT_POWER) {\n        requiredPower = MEDIUM_OUTPUT_POWER;\n    } else if (requiredPower < HIGH_OUTPUT_POWER) {\n        requiredPower = HIGH_OUTPUT_POWER;\n    } else if (requiredPower < OUTPUT_POWER_THRESHOLD) {\n        requiredPower = OUTPUT_POWER_THRESHOLD; // Erlaubt 100 Watt\n    } else if (requiredPower > MAX_OUTPUT_POWER) {\n        requiredPower = MAX_OUTPUT_POWER;\n    } else if (requiredPower >= OUTPUT_POWER_THRESHOLD) {\n        // Wenn requiredPower 100 oder mehr ist, in Schritten erhöhen\n        requiredPower = Math.ceil((requiredPower - OUTPUT_POWER_THRESHOLD) / OUTPUT_POWER_STEP) * OUTPUT_POWER_STEP + OUTPUT_POWER_THRESHOLD;\n        if (requiredPower > MAX_OUTPUT_POWER) {\n            requiredPower = MAX_OUTPUT_POWER; // Begrenzung auf das Maximum\n        }\n    }\n\n    // Setze die erforderliche Leistung\n    msg.payload = requiredPower;\n\n    // Aktualisiere den lastSetPower im Flow-Kontext\n    flow.set('lastSetPower', requiredPower);\n\n    //    node.warn(\"Discharging battery with required power: \" + requiredPower);\n    return msg;\n} else {\n    // Wenn außerhalb der Entladezeiten, setze Leistung auf 0\n    msg.payload = 0; // Keine Leistung abgeben\n    //    node.warn(\"Outside allowed discharge times. No discharge.\");\n    return msg;\n}\n",
         "outputs": 1,
@@ -1595,19 +1595,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1020,
-        "y": 300,
+        "x": 1060,
+        "y": 320,
         "wires": [
             [
-                "2d6bb5567de4de9e"
+                "71e5e584f0dc108c"
             ]
         ]
     },
     {
-        "id": "36df9d2b9351dbe2",
+        "id": "8ffff8cc4a417b7f",
         "type": "function",
-        "z": "82a7c230100c480c",
-        "g": "92cbe6c0ffdd3396",
+        "z": "0b5031412cee0eaa",
+        "g": "c95530c92e33afc8",
         "name": "Berechnung laden",
         "func": "// Konstanten für die Logik\nconst MIN_EINSPEISUNG = flow.get('MIN_EINSPEISUNG') || -150;  // Mindesteinspeisung in Watt, um das AC-Laden zu starten (negative Werte, da Einspeisung)\nconst START_AC_LEISTUNG = flow.get('START_AC_LEISTUNG') || 100; // Startwert für das AC-Laden in Watt\nconst MAX_AC_LEISTUNG = flow.get('MAX_AC_LEISTUNG') || 900;   // Maximale Ladeleistung des AC-Moduls in Watt\nconst MAX_GESAMTLEISTUNG = flow.get('MAX_GESAMTLEISTUNG') || 1100; // Maximale Ladeleistung des Systems in Watt (AC + BKW)\nconst LEISTUNGSSCHRITT = flow.get('LEISTUNGSSCHRITT') || 100;  // Schrittweite für die Anpassung der Ladeleistung\nconst ENT_PRELLZEIT = flow.get('ENT_PRELLZEIT') || 60000;   // Entprellzeit in Millisekunden (60 Sekunden)\nconst SKALIERUNG = flow.get('SKALIERUNG') || 1;          // Skalierung der Einspeisung\nconst BATTERY_FULL_THRESHOLD = flow.get('BATTERY_FULL_THRESHOLD') || 100; // Schwellenwert für den vollen Akku in Prozent\nconst STEIGERUNGSSCHRITT = flow.get('SKALIERUNGSSCHRITT') || 100;      // Fester Schritt zur Steigerung der Ladeleistung bei negativer Einspeisung\nconst ZIEL_NEGATIVE_LEISTUNG = flow.get('ZIEL_NEGATIVE_LEISTUNG') ||-100; // Zielwert für die negative Einspeisung\n\n// Variablen zur Speicherung der letzten Änderung\nlet lastChangeTime = context.get('lastChangeTime') || 0;\nlet currentACLeistung = context.get('currentACLeistung') || 0;\n\n// Sonnenaufgangs- und -untergangszeiten (im Format 'hh:mm')\nconst sunriseTime = msg.payload.sunriseTimestamp;  // Sonnenaufgang hh:mm\nconst sunsetTime = msg.payload.sunsetTimestamp;    // Sonnenuntergang hh:mm\n\n// Hilfsfunktion, um Zeit zu vergleichen\nfunction isTimeInRange(currentTime, startTime, endTime) {\n    let current = new Date(\"1970-01-01T\" + currentTime + \":00Z\");\n    let start = new Date(\"1970-01-01T\" + startTime + \":00Z\");\n    let end = new Date(\"1970-01-01T\" + endTime + \":00Z\");\n\n    return current >= start && current <= end;\n}\n\n// Aktueller Zeitstempel\nlet now = new Date();\nlet currentTimeString = now.toTimeString().slice(0, 5);  // Extrahiere die aktuelle Zeit im Format 'hh:mm'\n\n// Eingangswert für die Einspeisung (negative Werte zeigen Einspeisung)\nlet currentpower = msg.payload.currentPower;  // Annahme: msg.payload enthält currentPower vom Zähler\nlet bkwPower = msg.payload.PV_Power; // Leistung des Balkonkraftwerks\nlet batteryLevel = msg.payload.batteryLevel; // Aktueller Ladezustand des Akkus\nlet AC_Power = msg.payload.AC_Power; // Hier den neuen AC_Power Wert verwenden\n\n// Fallback: Prüfen, ob wichtige Werte vorhanden sind\nif (typeof currentpower === 'undefined' || typeof bkwPower === 'undefined' || typeof batteryLevel === 'undefined') {\n    currentACLeistung = 0;\n    msg.payload = currentACLeistung;  // Setze die Ladeleistung auf 0\n    node.send(msg);\n    return;  // Beende die Ausführung, da die notwendigen Werte fehlen\n}\n\n// Wenn der Akku voll ist, stoppe die Ladung\nif (batteryLevel >= BATTERY_FULL_THRESHOLD) {\n    currentACLeistung = 0;\n    msg.payload = currentACLeistung;\n    node.send(msg);  // Senden der Nachricht\n    return;  // Beende die Ausführung\n}\n\n// Überprüfen, ob die aktuelle Zeit zwischen Sonnenaufgang und Sonnenuntergang liegt\nif (isTimeInRange(currentTimeString, sunriseTime, sunsetTime)) {\n    // Prüfen, ob die Entprellzeit seit der letzten Änderung abgelaufen ist\n    if (now.getTime() - lastChangeTime >= ENT_PRELLZEIT) {\n        \n        // **Logik zur Ladeleistungserhöhung bei negativer Einspeisung**\n        if (currentpower <= MIN_EINSPEISUNG && Math.abs(currentpower) > currentACLeistung) {\n            // Berechne die verfügbare Leistung zur AC-Ladung\n            let availablePower = Math.abs(currentpower * SKALIERUNG) - Math.abs(MIN_EINSPEISUNG);\n\n            // Bestimme die neue AC-Ladeleistung basierend auf der Einspeisung\n            let newACLeistung = Math.min(\n                START_AC_LEISTUNG + Math.floor(availablePower / STEIGERUNGSSCHRITT) * STEIGERUNGSSCHRITT,\n                MAX_AC_LEISTUNG\n            );\n\n            // Berechne die maximale AC-Ladeleistung unter Berücksichtigung der Gesamtladeleistung\n            let gesamtLeistung = bkwPower + newACLeistung;\n            if (gesamtLeistung > MAX_GESAMTLEISTUNG) {\n                newACLeistung = Math.max(0, MAX_GESAMTLEISTUNG - bkwPower);\n            }\n\n            // Runden auf den nächsten Schritt\n            newACLeistung = Math.floor(newACLeistung / LEISTUNGSSCHRITT) * LEISTUNGSSCHRITT;\n\n            // Wenn sich die AC-Leistung geändert hat\n            if (newACLeistung > currentACLeistung) {\n                currentACLeistung = newACLeistung;\n                lastChangeTime = now.getTime();\n                context.set('currentACLeistung', currentACLeistung);\n                context.set('lastChangeTime', lastChangeTime);\n                msg.payload = currentACLeistung;  // Setzt den Payload auf den berechneten Wert\n                node.send(msg);  // Senden der Nachricht\n            }\n        }\n        \n        // **Dynamische Reduktion der AC-Leistung, um Einspeisung nahe -100W zu halten, wenn `currentpower` positiv wird**\n        else if (currentpower > 0) {\n            let differenz = currentpower - ZIEL_NEGATIVE_LEISTUNG; // Differenz, um -100W Zielwert zu erreichen\n            \n            // Berechne die neue AC-Leistung\n            let newACLeistung = Math.max(0, currentACLeistung - differenz);\n\n            // Runden auf den nächsten Schritt\n            newACLeistung = Math.floor(newACLeistung / LEISTUNGSSCHRITT) * LEISTUNGSSCHRITT;\n\n            // Setze neue AC-Leistung, wenn sich etwas geändert hat\n            if (newACLeistung !== currentACLeistung) {\n                currentACLeistung = newACLeistung;\n                context.set('currentACLeistung', currentACLeistung);\n                msg.payload = currentACLeistung;\n                node.send(msg);\n            }\n        }\n    }\n} else {\n    // Falls außerhalb des Zeitfensters, Ladeleistung auf 0 setzen\n    currentACLeistung = 0;\n    msg.payload = currentACLeistung;  // Setze die Ladeleistung auf 0\n    node.send(msg);  // Weitergabe der Nachricht\n}\n",
         "outputs": 1,
@@ -1616,11 +1616,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1010,
-        "y": 360,
+        "x": 1050,
+        "y": 380,
         "wires": [
             [
-                "8850d6e798ba1ec9"
+                "33b40993f6e729ff"
             ]
         ]
     }

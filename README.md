@@ -16,11 +16,13 @@ Dieser Node-RED-Flow dient zur Steuerung der **Ladung und Entladung** der **Zend
 ## Funktionsweise
 
 1. **Laden**: Überschüssiger Solarstrom wird tagsüber zum Laden der Batterie verwendet.
-2. **Entladen**: Nach Sonnenuntergang wird gespeicherte Energie verwendet, um den Haushaltsstrombedarf zu decken.
-3. **Notlademodus**: Wenn die Batterie auf kritische Werte wie 20 % SOC oder 3,2 V Zellspannung fällt, wird das Gate geschlossen und die Batterie in den Notlademodus versetzt.
+2. **Entladen**: Die Abgabe wird freigegeben, sobald der Akku die obere Ladegrenze erreicht hat oder nach Sonnenuntergang.
+3. **Notlademodus**: Wenn die Batterie auf kritische Werte wie 7 % SOC oder 2,9 V Zellspannung fällt, wird das Gate geschlossen und die Batterie in den Notlademodus versetzt.
 4. **Gate-Steuerung**: Das Gate bleibt geschlossen, bis der SOC mindestens 50 % erreicht hat, danach wird es automatisch wieder freigegeben.
 5. **Bypass-Modus**: Optional kann ein Bypass aktiviert werden, um die Steuerung zu umgehen.
 6. **openDTU-Funktionalität**: Ermöglicht die dynamische Anpassung der Lade- und Entladeparameter über ein abgestimmtes DPL-System.
+7. **Anpassbare Parameter**: Alle Schwellenwerte und Parameter, können via Flow Variablen definiert werden.
+8. **Mauelle Schalter für Dashboard**: Im Flow sind rechts manuelle Schalter integriert, die man entweder in sein Dashboard oder in Google Home legen kann, falls man den HUB offline betreiben möchte, wie ich es tue. 
 
 ## Voraussetzungen
 

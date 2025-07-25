@@ -119,6 +119,7 @@ Falls der SOC nicht korrekt berechnet wird, prüfe:
 Füge temporär einen Debug-Knoten hinter `accumulatedWh` ein, um die Zwischenwerte zu prüfen.
 
 ### 🎉 Credits
-Entwickelt von mir mit impulsen aus der Community.
+Entwickelt von mir mit Impulsen aus der Community.
+
 🌍 Open Source – Weitergabe & Anpassung ausdrücklich erlaubt!  
 💬 Bei Fragen: Einfach hier weitermachen oder Forum aufsuchen

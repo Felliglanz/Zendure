@@ -96,7 +96,7 @@ Per Datenpunkt `Zendure_schlecht_Wetter` kannst du zwischen zwei Zellschutz-Schw
 
 | Modus   | `low_minVol`   |
 |---------|----------------|
-| Sommer  | 3.05 V          |
+| Sommer  | 3.10 V          |
 | Winter  | 3.20 V          |
 
 Der Flow passt diese Schwelle automatisch an und verwendet sie in der Gate-Logik.
@@ -119,6 +119,6 @@ Falls der SOC nicht korrekt berechnet wird, prüfe:
 Füge temporär einen Debug-Knoten hinter `accumulatedWh` ein, um die Zwischenwerte zu prüfen.
 
 ### 🎉 Credits
-Entwickelt durch Community-Mitglieder aus dem ioBroker-Forum  
+Entwickelt von mir mit impulsen aus der Community.
 🌍 Open Source – Weitergabe & Anpassung ausdrücklich erlaubt!  
 💬 Bei Fragen: Einfach hier weitermachen oder Forum aufsuchen

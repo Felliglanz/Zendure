@@ -1,53 +1,124 @@
 <img width="2047" height="1035" alt="image" src="https://github.com/user-attachments/assets/0d82ce20-d69c-4a30-9ece-67e2457fc589" />
 
-# AC-Ladungs- und Entladungssteuerung für Zendure Solarflow 1200 & ACE1500 mit openDTUonBattery
+# 🌞 Zendure Solarflow + ACE1500 + Node-RED
 
-## Überblick
+Ein vollständiger Node-RED-Flow zur intelligenten Steuerung deiner Zendure Solarflow-Anlage mit ACE1500 und openDTU.  
+Mit Zellspannungs-Schutz (minVol), manueller SOC-Berechnung, Sonnenzeit-gesteuerter Entladelogik und manuell oder automatisch kontrollierten Lade- und Entladephasen.
 
-Dieser Node-RED-Flow dient zur Steuerung der **Ladung und Entladung** der **Zendure Solarflow 1200 Batterie** und **ACE1500** in Kombination mit openDTUonBattery. Er optimiert die Energie-Nutzung deines Balkonkraftwerks und zusätzlicher PV-Anlagen. Ziel ist es, überschüssigen Solarstrom effizient zu speichern und bei Bedarf in deinem Haushalt zu nutzen – unter Berücksichtigung einer präzisen Regelung über **openDTUonBattery**.
+---
 
-## Vorteile
+## 🚦 Features im Überblick
 
-- **Dynamische Regelung durch openDTUonBattery**: Mit dem neuen Ansatz wird die Steuerung direkt an die Batterie abgegeben, basierend auf Echtzeit-Daten und Zuständen.
-- **Effizientes Laden und Entladen**: Lade und entlade den Speicher dynamisch, abhängig von den aktuellen Bedingungen.
-- **Automatisierte Schaltvorgänge**: Der Flow steuert Relais, Gate und AC-Modus automatisch für maximale Effizienz.
-- **Optimale Akku-Überwachung**: Durch SOC-History wird der Akku-Zustand laufend überwacht und für eine bessere Kalibrierung gespeichert.
+- ✅ minVol-Schutz gegen Tiefentladung  
+- 🔋 SOC-Berechnung per Wh-Integration (ohne Adapter)  
+- ⛅️ Sommer-/Winterbetrieb über minVol-Grenzen  
+- 💡 Sonnenzeitenlogik für Entladefreigabe  
+- 🛑 Gate-Logik: Sperrt Stromfluss bei Bedarf  
+- 🤖 Manuelle Steuerung über ioBroker-Datenpunkte  
+- 📉 Optionales InfluxDB-Logging für Zellspannung  
+- 🧱 Modularer Flow mit Subflows für einfache Erweiterung  
 
-## Funktionsweise
+---
 
-1. **Laden**: Überschüssiger Solarstrom wird tagsüber zum Laden der Batterie verwendet.
-2. **Entladen**: Die Abgabe wird freigegeben, sobald der Akku die obere Ladegrenze erreicht hat oder nach Sonnenuntergang.
-3. **Notlademodus**: Wenn die Batterie auf kritische Werte wie 7 % SOC oder 2,9 V Zellspannung fällt, wird das Gate geschlossen und die Batterie in den Notlademodus versetzt.
-4. **Gate-Steuerung**: Das Gate bleibt geschlossen, bis der SOC mindestens 50 % erreicht hat, danach wird es automatisch wieder freigegeben.
-5. **Bypass-Modus**: Optional kann ein Bypass aktiviert werden, um die Steuerung zu umgehen.
-6. **openDTU-Funktionalität**: Ermöglicht die dynamische Anpassung der Lade- und Entladeparameter über ein abgestimmtes DPL-System.
-7. **Anpassbare Parameter**: Alle Schwellenwerte und Parameter, können via Flow Variablen definiert werden.
-8. **Mauelle Schalter für Dashboard**: Im Flow sind rechts manuelle Schalter integriert, die man entweder in sein Dashboard oder in Google Home legen kann, falls man den HUB offline betreiben möchte, wie ich es tue. 
+## 🧰 Voraussetzungen
 
-## Voraussetzungen
+| Komponente          | Beschreibung                                       |
+|---------------------|----------------------------------------------------|
+| Node-RED (v2+)      | Flow-Engine zur Logiksteuerung                     |
+| ioBroker            | Adapter und Userdata-Verwaltung                    |
+| EMQX MQTT Broker    | Kommunikation mit openDTU                          |
+| openDTU (z. B. Deye)| Wechselrichtersteuerung über MQTT                  |
+| sunrise-sunset      | Adapter für Sonnenzeitsteuerung                    |
+| InfluxDB (optional) | Logging von Zellspannungswerten                    |
+---
 
-- **Node-RED**: Installiere Node-RED auf deinem System.
-- **openDTU auf Batterie**: Stelle sicher, dass openDTU korrekt eingerichtet ist.
-- **Leistungsmesser**: Zum Beispiel mit einem Lesekopf und Tasmota zur Erfassung des `currentpower`.
-- **Sonnenzeiten-Adapter**: Ein Adapter für Sonnenaufgangs- und -untergangszeiten.
-- **MQTT**: Kommunikation zwischen den Geräten muss über MQTT eingerichtet sein.
-- **ioBroker**: Für die Datenübermittlung und Steuerung.
+## 📁 ioBroker: erforderliche Datenpunkte
 
-## Installation
+| Datenpunkt                                      | Typ     | Zweck                                 |
+|------------------------------------------------|---------|---------------------------------------|
+| `0_userdata.0.Zendure_Werte.minVol`            | Number  | Kleinste Zellspannung (aus Script)  
+| `0_userdata.0.Steuerung.AC_Notladen_Start`     | Boolean | Notladen manuell aktivieren  
+| `0_userdata.0.Steuerung.Entladen_Stop`         | Boolean | Entladung manuell stoppen  
+| `0_userdata.0.Steuerung.Laden_Stop`            | Boolean | Laden manuell stoppen  
+| `0_userdata.0.Steuerung.Zendure_Flow_Stop`     | Boolean | Flow komplett deaktivieren  
+| `0_userdata.0.Steuerung.Zendure_schlecht_Wetter`| Boolean | minVol-Schwelle saisonal anpassen  
+| `0_userdata.0.Steuerung.Zendure_Basismodus`    | Boolean | Geräte manuell schalten  
+| `0_userdata.0.PV-Daten.SOC_calc`               | Number  | Berechneter SOC-Wert  
 
-1. **Flow importieren**: Öffne Node-RED und importiere den bereitgestellten Flow.
-2. **Konfiguration prüfen**:
-   - Stelle sicher, dass alle Nodes wie Sonnenzeiten, SOC-Werte und AC-Modus richtig konfiguriert sind.
-   - Die Verbindung zu ioBroker und openDTU muss aktiv und stabil sein.
-3. **openDTU einstellen**: Passe die Lade- und Entladegrenzen an (z. B. max. 830W Entladeleistung).
+---
 
-## Anpassungen
+## ⚡ minVol – Zellspannungsbasierte Entladesperre
 
-- **Gate-Steuerung**: Die Funktion `SOC min 50%` gewährleistet, dass das Gate erst bei einem SOC von 50 % oder mehr wieder geöffnet wird.
-- **AC-Ladung**: Über die Funktion `Berechnung laden` wird dynamisch die Ladeleistung angepasst, abhängig von Überschussenergie.
-- **Entladung**: Nutze die Funktion `Berechnung entladen`, um die Entladeleistung auf den maximalen SOC oder bis zum Notmodus zu regulieren.
-- **Manuelle Steuerung**: Es stehen mehrere manuelle Steuerungsmöglichkeiten zur Verfügung (z. B. Entladestop, Notladen manuell starten).
+In ioBroker berechnest du `minVol` (kleinste Zellspannung aus 4 Packs) und speicherst ihn.  
+Node-RED liest diesen Wert und vergleicht ihn mit `low_minVol`, z. B. 3.10 V.  
+Bei Unterschreitung wird:
+- das Gate geschlossen  
+- Entladeleistung auf 0 W gesetzt  
+- openDTU erkennt das → WR schaltet ab  
 
-## Haftungsausschluss
+Freigabe erfolgt erst wieder nach Sonnenaufgang.
 
-Die Verwendung dieses Flows erfolgt auf eigene Verantwortung. Teste ihn gründlich, bevor du ihn produktiv einsetzt. Der Autor übernimmt keine Haftung für direkte oder indirekte Schäden.
+Beispiel:
+```js
+let min = Math.min(pack1, pack2, pack3, pack4);
+setState("0_userdata.0.Zendure_Werte.minVol", min);
+```
+
+---
+
+## 🔋 SOC-Berechnung (manuell & dynamisch)
+
+Der Flow summiert die Energiebewegungen:
+
+    ΔWh = (InputPower − OutputPower) × (Intervall / 3600)
+
+Diese Wh ergeben den aktuellen Ladestand.  
+Wenn `maxVol ≥ 3.57 V` erkannt wird:
+- SOC = 100 %  
+- Kapazität (`realCapacity`) wird auf den aktuellen Wert angepasst
+
+Danach:
+
+    SOC = accumulatedWh ÷ realCapacity × 100
+
+→ Der berechnete SOC wird nach `PV-Daten.SOC_calc` geschrieben
+
+Vorteil:  
+- Keine Adapterabhängigkeit  
+- Dynamischer Abgleich  
+- Unabhängig von Herstellerlogik
+
+---
+
+## 🌡️ Sommer-/Wintermodus: minVol anpassen
+
+Per Datenpunkt `Zendure_schlecht_Wetter` kannst du zwischen zwei Zellschutz-Schwellen wählen:
+
+| Modus   | `low_minVol`   |
+|---------|----------------|
+| Sommer  | 3.05 V          |
+| Winter  | 3.20 V          |
+
+Der Flow passt diese Schwelle automatisch an und verwendet sie in der Gate-Logik.
+
+---
+## ⚠️ Haftungsausschluss, Debug & Credits
+
+### 📌 Haftungsausschluss
+Die hier vorgestellten Konzepte und Flows wurden aus Tests und Erfahrungswerten zusammengetragen. Es gibt keine Garantie für die Genauigkeit, Funktion oder Sicherheit bei abweichenden Systemen.  
+👉 Verwende die Logik nur, wenn du sie verstehst und bei deinem Setup validieren kannst.
+
+### 🐞 Debug-Hilfe
+Falls der SOC nicht korrekt berechnet wird, prüfe:
+- Stromsensor liefert korrekte Werte (`InputPower`, `OutputPower`)
+- Zellenspannungen werden regelmäßig aktualisiert (`maxVol`, `minVol`)
+- Der Flow läuft durch und speichert Daten (`SOC_calc`, `realCapacity`, etc.)
+- Intervall-Zeit stimmt (z. B. alle 30 Sekunden)
+
+📍 Tipp:  
+Füge temporär einen Debug-Knoten hinter `accumulatedWh` ein, um die Zwischenwerte zu prüfen.
+
+### 🎉 Credits
+Entwickelt durch Community-Mitglieder aus dem ioBroker-Forum  
+🌍 Open Source – Weitergabe & Anpassung ausdrücklich erlaubt!  
+💬 Bei Fragen: Einfach hier weitermachen oder Forum aufsuchen

@@ -1,5 +1,4 @@
-<img width="1920" height="1290" alt="image" src="https://github.com/user-attachments/assets/a6affc73-50f7-4ac6-bf33-90c9a368ca01" />
-
+<img width="2047" height="1035" alt="image" src="https://github.com/user-attachments/assets/0d82ce20-d69c-4a30-9ece-67e2457fc589" />
 
 # AC-Ladungs- und Entladungssteuerung für Zendure Solarflow 1200 & ACE1500 mit openDTUonBattery
 

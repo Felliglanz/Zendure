@@ -1,4 +1,4 @@
-<img width="2047" height="1035" alt="image" src="https://github.com/user-attachments/assets/0d82ce20-d69c-4a30-9ece-67e2457fc589" />
+<img width="1600" height="1265" alt="image" src="https://github.com/user-attachments/assets/2c4c7dd4-31e5-4147-bf51-52aa437667b6" />
 
 # 🌞 Zendure Solarflow + ACE1500 + Node-RED
 

@@ -2,7 +2,7 @@
 
 # ⚡ Zendure HUB1200 + ACE1500 Flow mit openDTUonBattery
 
-Dieser Node-RED Flow steuert ein Zendure Solarflow-System mit HUB1200 und ACE1500, ergänzt durch eine openDTU-Integration auf Batteriebasis.  
+Dieser Node-RED Flow steuert ein Zendure Solarflow-System mit HUB1200 und ACE1500, die Entladeleistung regelt in meinem Falle eine openDTUonBattery.  
 Die Datei heißt:
 
 **Zendure HUB1200+ACE1500 openDTUonBattery.json**

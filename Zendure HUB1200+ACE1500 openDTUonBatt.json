@@ -2219,11 +2219,7 @@
         "y": 200,
         "wires": [
           {
-            "id": "4ccc932314d073be",
-            "port": 0
-          },
-          {
-            "id": "6a94785e44c705c4",
+            "id": "04a6e3a2237b7adf",
             "port": 0
           }
         ]
@@ -2233,11 +2229,7 @@
         "y": 280,
         "wires": [
           {
-            "id": "e4d9c933a9c819af",
-            "port": 0
-          },
-          {
-            "id": "9be7cfd9385c1f2b",
+            "id": "f5a15e1b72424865",
             "port": 0
           }
         ]
@@ -2530,7 +2522,9 @@
     "x": 1150,
     "y": 260,
     "wires": [
-      []
+      [
+        "f5a15e1b72424865"
+      ]
     ]
   },
   {
@@ -2556,7 +2550,9 @@
     "x": 1170,
     "y": 180,
     "wires": [
-      []
+      [
+        "04a6e3a2237b7adf"
+      ]
     ]
   },
   {
@@ -2582,7 +2578,9 @@
     "x": 1170,
     "y": 220,
     "wires": [
-      []
+      [
+        "04a6e3a2237b7adf"
+      ]
     ]
   },
   {
@@ -2608,7 +2606,9 @@
     "x": 1150,
     "y": 300,
     "wires": [
-      []
+      [
+        "f5a15e1b72424865"
+      ]
     ]
   },
   {
@@ -2655,6 +2655,44 @@
     ]
   },
   {
+    "id": "04a6e3a2237b7adf",
+    "type": "rbe",
+    "z": "229f8f76918d802b",
+    "g": "045918e25cec8abe",
+    "name": "",
+    "func": "rbe",
+    "gap": "",
+    "start": "",
+    "inout": "out",
+    "septopics": true,
+    "property": "payload",
+    "topi": "topic",
+    "x": 1350,
+    "y": 200,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "f5a15e1b72424865",
+    "type": "rbe",
+    "z": "229f8f76918d802b",
+    "g": "045918e25cec8abe",
+    "name": "",
+    "func": "rbe",
+    "gap": "",
+    "start": "",
+    "inout": "out",
+    "septopics": true,
+    "property": "payload",
+    "topi": "topic",
+    "x": 1350,
+    "y": 280,
+    "wires": [
+      []
+    ]
+  },
+  {
     "id": "3b1f76e3e4b8bb55",
     "type": "group",
     "z": "229f8f76918d802b",
@@ -2697,11 +2735,13 @@
       "6a94785e44c705c4",
       "4ccc932314d073be",
       "9be7cfd9385c1f2b",
-      "163c16f690679473"
+      "163c16f690679473",
+      "04a6e3a2237b7adf",
+      "f5a15e1b72424865"
     ],
     "x": 1054,
     "y": 99,
-    "w": 352,
+    "w": 372,
     "h": 242
   },
   {
@@ -3734,6 +3774,7 @@
     "type": "tab",
     "label": "Zendure Solarflow",
     "disabled": false,
+    "locked": true,
     "info": "",
     "env": []
   },

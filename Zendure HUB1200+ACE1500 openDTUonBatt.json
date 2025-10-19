@@ -379,7 +379,9 @@
     "timeZoneDST": 0,
     "stateTimeFormat": "3",
     "stateDateFormat": "12",
-    "contextStore": "default"
+    "contextStore": "default",
+    "sunPositions": [],
+    "predefAngles": []
   },
   {
     "id": "5bb06bcb4ba06d8f",
